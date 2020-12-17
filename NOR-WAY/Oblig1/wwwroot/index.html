@@ -1,0 +1,218 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Billettkjøp</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+    <script src="js/index.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body style=" background-image: url(nor-way.jpg); background-repeat: no-repeat;" class="w-100 h-100">
+    <nav class="navbar navbar-expand-md navbar-light bg-transparent">
+        <a href="#" class="navbar-brand">
+            <img src="icon.svg" height="28" alt="CoolBrand">
+        </a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav">
+                <a href="#" class="nav-item nav-link active">Hjem</a>
+                <a href="#" class="nav-item nav-link">Billetter</a>
+                <a href="#" class="nav-item nav-link">Om oss</a>
+                <a href="logginn.html" class="nav-item nav-link">Innlogging</a>
+            </div>
+            <div class="navbar-nav ml-auto">
+      
+        </div>
+    </nav>
+
+    <div class="container bg-light border border-primary " id="skjema" style="margin-top:5em">
+
+        <div class="w-100">
+
+            <div class="form-group ">
+                <label for="stasjoner">Jeg skal reise fra</label>
+                <select type="text" oninput="vis2()" class="form-control form-control-lg fa border border-primary" placeholder="Reisefra" aria-label="Reisefra " aria-describedby="basic-addon2" id="stasjoner">
+                </select>
+            </div>
+
+            <div class="form-group" id="nummer2" style="display:none">
+                <label for="stasjonertil">Jeg skal reise til</label>
+                <select type="text" oninput="vis3()" class="form-control form-control-lg fa border border-primary" placeholder="ReiseTil" aria-label="Reisefra " aria-describedby="basic-addon2" id="stasjonertil">
+                </select>
+            </div>
+
+            <div id="btn" style="display:none">
+                <ul class="pager">
+                    <li><a onclick="tur()">Tur</a></li>
+                    <li><a onclick="retur()">Re-Tur</a></li>
+                </ul>
+            </div>
+            <div id="time" style="display:none;" onchange="valg2()">
+                <div id="show-tur" class="row">
+                    <label for="start" class="col-3">Tur:</label>
+                    <input class="col-4 border border-primary" type="date" id="turDato" name="trip-start"
+                           value=""
+                           min="2020-01-01" max="2020-12-31" onchange="validateDato()">
+                    <input class="col-4 border border-primary" type="time" id="startTid" onchange="hentAvgangTur()"
+                           min="00:00" max="24:00" required />
+                </div>
+            </div>
+            <div id="timetil" style="display:none;" onchange="valg2()">
+                <div id="show-tur" class="row">
+                    <label for="start" class="col-3">Retur:</label>
+                    <input class="col-4 border border-primary" type="date" id="returDato" name="trip-start"
+                           value=""
+                           min="2020-01-01" max="2020-12-31"  disabled>
+                    <input class="col-4 border border-primary" type="time" id="returTid" onchange="hentAvgangRetur()"
+                           min="00:00" max="24:00" required>
+                </div>
+            </div>
+
+            <div id="valg" style="display:none;">
+                <input type="checkbox" onclick="vokse2()" id="voksen">
+                <label for="voksen"> Voksen</label>
+                <input type="number" id="number1" value="1" min="1" max="10" style="display:none">
+                <br>
+                <input type="checkbox" id="Barn" onclick="Barn2()">
+                <label for="Barn"> Barn</label>
+                <input type="number" id="number2" value="1" min="1" max="10" style="display:none">
+                <br>
+                <input type="checkbox" id="Honor" onclick="honor2()">
+                <label for="Honor"> Honor</label>
+                <input type="number" id="number3" value="1" min="1" max="10" style="display:none">
+                <br>
+                <input type="checkbox" id="Student"  onclick="student2()">
+                <label for="Student">Student</label>
+                <input type="number" id="number4" value="1" min="1" max="10" style="display:none">
+                <br>
+            </div>
+
+            <div id="feilmelding"></div>
+            <button class="btn btn-primary btn-lg" style="display:none;" id="btnAvgang" onclick="visAvgangerTider()">Se Avgangstider</button>
+
+        </div>
+    </div>
+
+    <div id="seAvgangstider" class="container bg-light border border-primary" id="skjema" style="margin-top:3em;display:none">
+        <table class="table">
+            <h1>Tur</h1>
+            <thead>
+                <tr class="row">
+                    <th class="col-3">Stasjon</th>
+                    <th class="col-3">Til</th>
+                    <th class="col-3">Tid</th>
+                    <th class="col-3">Billetter</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="row">
+                    <td id="stasjonfra" class="col-3"></td>
+                    <td id="stasjonfraDest" class="col-3"></td>
+                    <td id="tidfra" class="col-3"></td>
+                    <td id="typefra" class="col-3"></td>
+                </tr>
+
+
+            </tbody>
+        </table>
+
+
+        <div id="tableRetur">
+            <table class="table">
+                <hr />
+                <h1>Retur</h1>
+                <thead>
+                    <tr class="row">
+                        <th class="col-3">Stasjon</th>
+                        <th class="col-3">Til</th>
+                        <th class="col-3">Tid</th>
+                        <th class="col-3">Billetter</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="row">
+                        <td id="stasjontil" class="col-3"></td>
+                        <td id="stasjontilDest" class="col-3"></td>
+                        <td id="tidtil" class="col-3"></td>
+                        <td id="typetil" class="col-3"></td>
+                    </tr>
+                </tbody>
+            </table>
+
+
+        </div>
+        <div>
+            <table class="table">
+                <tbody>
+
+                    <tr class="row">
+                        <th class="col-3"></th>
+                        <th class="col-3">Pris</th>
+                        <td class="col-3" id="totalpris"></td>
+                        <th class="col-3"></th>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+
+
+        <h1> Betalingsinformasjon </h1>
+        <form>
+            <div class="form-group">
+                <label for="inputlg">E-post</label>
+                <input class="form-control form-control-lg " id="epost" type="text"onchange="validerEpost(this.value)">
+                <div id="message0"></div>
+            </div>
+            <div class="form-group">
+                <label for="inputlg">Telefonnummer</label>
+                <input class="form-control input-lg" id="tlfnr" type="text" onchange="validerTlfnr(this.value)">
+                <div id="message2"></div>
+            </div>
+            <div class="row">
+                <div class="form-group col-10">
+
+                    <label for="inputlg">Kortnummer</label>
+                    <input class="form-control input-lg" id="kortnr" type="text" onchange="validerKortnr(this.value)">
+                    <div id="message1"></div>
+
+                </div>
+                <div class="form-group col-2">
+                    <label for="inputlg">cvc</label>
+                    <input class="form-control input-lg" id="cvc" type="text"onchange="validerCvc(this.value)">
+                    <div id="message3"></div>
+
+                </div>
+            </div>
+        </form>
+      
+
+
+        <div class="row">
+            <div class="col-6">
+                <button onclick="tilbake()" class="btn btn-primary btn-lg">Tilbake</button>
+            </div>
+            <div class="col-6">
+                <div id="feilmld"></div>
+                <a class="btn btn-primary btn-lg float-right" onClick="bekreftKjop()"  >Bekreft Kjøp</a>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+</body>
+</html>

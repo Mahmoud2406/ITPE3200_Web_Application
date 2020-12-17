@@ -1,0 +1,26 @@
+2020-11-06T16:43:05.0619415+01:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2020-11-06T16:43:05.0760375+01:00  [INF] Hosting environment: "Development" (c3307c92)
+2020-11-06T16:43:05.0785642+01:00  [INF] Content root path: "C:\Users\Mahmo\Documents\Mappe3Webapp\mappe3\mappe3" (b5d60022)
+2020-11-06T16:53:59.7861825+01:00 800001fb-0003-fa00-b63f-84710c7967bb [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.Net.WebSockets.WebSocketException (0x80004005): The WebSocket is in an invalid state ('Aborted') for this operation. Valid states are: 'Open, CloseReceived'
+   at System.Net.WebSockets.WebSocketValidate.ThrowIfInvalidState(WebSocketState currentState, Boolean isDisposed, WebSocketState[] validStates)
+   at System.Net.WebSockets.ManagedWebSocket.CloseOutputAsyncCore(WebSocketCloseStatus closeStatus, String statusDescription, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.SpaServices.Extensions.Proxy.SpaProxy.PumpWebSocket(WebSocket source, WebSocket destination, Int32 bufferSize, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.SpaServices.Extensions.Proxy.SpaProxy.AcceptProxyWebSocketRequest(HttpContext context, Uri destinationUri, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.SpaServices.Extensions.Proxy.SpaProxy.PerformProxyRequest(HttpContext context, HttpClient httpClient, Task`1 baseUriTask, CancellationToken applicationStoppingToken, Boolean proxy404s)
+   at Microsoft.AspNetCore.Builder.SpaProxyingExtensions.<>c__DisplayClass2_0.<<UseProxyToSpaDevelopmentServer>b__0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-11-06T16:53:59.8004230+01:00 800001fb-0003-fa00-b63f-84710c7967bb [WRN] The response has already started, the error page middleware will not be executed. (e1dd4c0d)
+2020-11-06T16:53:59.8189518+01:00 800001fb-0003-fa00-b63f-84710c7967bb [ERR] Connection ID ""18014398523977499130"", Request ID ""800001fb-0003-fa00-b63f-84710c7967bb"": An unhandled exception was thrown by the application. (bf316047)
+System.Net.WebSockets.WebSocketException (0x80004005): The WebSocket is in an invalid state ('Aborted') for this operation. Valid states are: 'Open, CloseReceived'
+   at System.Net.WebSockets.WebSocketValidate.ThrowIfInvalidState(WebSocketState currentState, Boolean isDisposed, WebSocketState[] validStates)
+   at System.Net.WebSockets.ManagedWebSocket.CloseOutputAsyncCore(WebSocketCloseStatus closeStatus, String statusDescription, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.SpaServices.Extensions.Proxy.SpaProxy.PumpWebSocket(WebSocket source, WebSocket destination, Int32 bufferSize, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.SpaServices.Extensions.Proxy.SpaProxy.AcceptProxyWebSocketRequest(HttpContext context, Uri destinationUri, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.SpaServices.Extensions.Proxy.SpaProxy.PerformProxyRequest(HttpContext context, HttpClient httpClient, Task`1 baseUriTask, CancellationToken applicationStoppingToken, Boolean proxy404s)
+   at Microsoft.AspNetCore.Builder.SpaProxyingExtensions.<>c__DisplayClass2_0.<<UseProxyToSpaDevelopmentServer>b__0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContextOfT`1.ProcessRequestAsync()

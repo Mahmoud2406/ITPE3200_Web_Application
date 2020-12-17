@@ -1,0 +1,21 @@
+2020-11-07T14:43:20.2902004+01:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2020-11-07T14:43:20.3062670+01:00  [INF] Hosting environment: "Development" (c3307c92)
+2020-11-07T14:43:20.3085333+01:00  [INF] Content root path: "C:\Users\Mahmo\Documents\Mappe3Webapp\mappe3\mappe3" (b5d60022)
+2020-11-07T20:07:07.1760866+01:00  [ERR] ERROR in app/Questions.ts:7:19 - error TS1005: ';' expected.
+
+7   public category string;
+                    ~~~~~~
+
+ (9c68a649)
+2020-11-07T20:10:37.7535970+01:00  [ERR] ERROR in app/Questions.ts:7:19 - error TS1005: ';' expected.
+
+7   public category string;
+                    ~~~~~~
+
+ (9c68a649)
+2020-11-07T20:12:17.7348330+01:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2020-11-07T20:12:17.7509261+01:00  [INF] Hosting environment: "Development" (c3307c92)
+2020-11-07T20:12:17.7562088+01:00  [INF] Content root path: "C:\Users\Mahmo\Documents\Mappe3Webapp\mappe3\mappe3" (b5d60022)
+2020-11-07T21:28:10.2416444+01:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2020-11-07T21:28:10.3287163+01:00  [INF] Hosting environment: "Development" (c3307c92)
+2020-11-07T21:28:10.3310242+01:00  [INF] Content root path: "C:\Users\Mahmo\Documents\Mappe3Webapp\mappe3\mappe3" (b5d60022)

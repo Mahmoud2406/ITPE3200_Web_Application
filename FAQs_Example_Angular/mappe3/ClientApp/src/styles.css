@@ -1,0 +1,99 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+
+/* Provide sufficient contrast against white background */
+a {
+  color: #0366d6;
+}
+
+code {
+  color: #e01a76;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+
+.table td, .table th {
+  padding: .75rem;
+  vertical-align: middle !important;
+  border-top: 0.5px solid #dee2e6;
+}
+
+.rating {
+  background: rgb(171,171,171);
+  background: linear-gradient(27deg, rgba(171,171,171,0.29105409253545167) 0%, rgba(171,171,171,0.20421935864189422) 100%);
+}
+
+.btnUp:active, .btnUp:focus {
+    background-color: silver !important;
+  color: #5cb85c !important;
+}
+
+.btnDown:active, .btnDown:focus {
+  background-color: silver !important;
+  color: #d9534f !important;
+}
+
+tr.spaceUnder > td {
+  padding-bottom: 1em !important;
+}
+
+table.table.table-striped tr.found td {
+  background: rgba(0,0,0,0.0) !important;
+}
+
+html, body {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, sans-serif;
+}
+
+
+:root {
+  --mainColor: lightgrey;
+}
+.btn-link {
+  font-weight: 400;
+  text-decoration: none;
+  color: black;
+  width: 100%;
+  text-align: left;
+}
+
+.accordion > .card > .card-header {
+  -webkit-box-shadow: 0 8px 6px -6px lightgrey;
+  -moz-box-shadow: 0 8px 6px -6px lightgrey;
+  box-shadow: 0 8px 6px -6px lightgrey;
+}
+
+.card-body {
+  background-color: rgba(0, 0, 0, 0.0) !important;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: rgba(0, 0, 0, 0.0) !important;
+  background-clip: border-box;
+  border: 0px solid rgba(0,0,0,.125) !important;
+  border-radius: .25rem;
+}
+
+.accordion > .card > .card-header {
+  border-radius: 5px;
+  margin-bottom: 15px !important;
+   border-left: 4px solid #d9534f;
+}
+
+span.card-header-link {
+  width: 100% !important;
+}
+

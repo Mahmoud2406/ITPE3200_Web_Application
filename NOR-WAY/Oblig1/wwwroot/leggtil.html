@@ -1,0 +1,167 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Billettkjøp</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+    <script src="js/leggtil.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="index.css">
+    <style>
+        #map {
+            height: 400px;
+            /* The height is 400 pixels */
+            width: 100%;
+            /* The width is the width of the web page */
+        }
+    </style>
+</head>
+<body style=" background-image: url(nor-way.jpg); background-repeat: no-repeat;" class="w-100 h-100">
+    <nav class="navbar navbar-expand-md navbar-light bg-transparent">
+        <a href="#" class="navbar-brand">
+            <img src="icon.svg" height="28" alt="CoolBrand">
+        </a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav">
+                <a href="index.html" class="nav-item nav-link">Hjem</a>
+                <a href="#" class="nav-item nav-link">Billetter</a>
+                <a href="#" class="nav-item nav-link">Om oss</a>
+                <button onClick="loggut()" class="nav-item nav-link">Logg ut</button>
+            </div>
+            <div class="navbar-nav ml-auto">
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid">
+        <form class="form bg-light border border-primary">
+            <div class="col-12 ">
+                <br />
+            </div>
+            <div class="col-12 ">
+                <h1> <strong>Legg til rute</strong></h1>
+            </div>
+            <div class="col-12 ">
+                <br />
+            </div>
+            <div class="form-row m-4" id="Skjema">
+          
+                <div class="col-12 ">
+                    <label>Buss &nbsp; </label> <input type="text" id="buss" />
+                    <label>   &nbsp; Pris &nbsp; </label> <input type="text" id="pris" />
+                </div>
+                <div class="col-12 ">
+                    <br /> <br />
+                </div>
+                <div class="col">
+                    <label>Avgang 1</label>
+                    <input class="w-75" type="text" id="avg1" />
+                    <i class='fa fa-arrow-right w-20' aria-hidden='true'></i>
+                </div>
+                <div class="col">
+                    <label>Avgang 2</label>
+                    <input class="w-75" type="text" id="avg2" />
+                    <i class='fa fa-arrow-right w-20' aria-hidden='true'></i>
+                </div>
+                <div class="col">
+                    <label>Avgang 3</label>
+                    <input class="w-75" type="text" id="avg3" />
+                    <i class='fa fa-arrow-right w-20' aria-hidden='true'></i>
+                </div>
+                <div class="col">
+                    <label>Avgang 4</label>
+                    <input class="w-75" type="text" id="avg4" />
+                    <i class='fa fa-arrow-right w-20' aria-hidden='true'></i>
+                </div>
+                <div class="col">
+                    <label>Avgang 5</label>
+                    <input class="w-75" type="text" id="avg5" />
+                    <i class='fa fa-arrow-right w-20' aria-hidden='true'></i>
+                </div>
+                <div class="col">
+                    <label>Avgang 6</label>
+                    <input class="w-75" type="text" id="avg6" />
+                </div>
+                <div class="col-12 ">
+                    <br /> <br />
+                </div>
+                <div class="col-12 ">
+                    <h1> <strong>Avgangstider</strong> Man-Fre (Lør)</h1>
+                </div>
+                <div class="col-12 ">
+                    <br />
+                </div>
+                <div class="col">
+                    <label>Avgang 1</label>
+                    <div id="tid1"></div>
+                </div>
+                <div class="col">
+                    <label>Avgang 2</label>
+                    <div id="tid2"></div>
+                </div>
+                <div class="col">
+                    <label>Avgang 3</label>
+                    <div id="tid3"></div>
+                </div>
+                <div class="col">
+                    <label>Avgang 4</label>
+                    <div id="tid4"></div>
+                </div>
+                <div class="col">
+                    <label>Avgang 5</label>
+                    <div id="tid5"></div>
+                </div>
+                <div class="col">
+                    <label>Avgang 6</label>
+                    <div id="tid6"></div>
+                </div>
+                <div class="col-12 ">
+                    <br />
+                </div>
+                <div class="col">
+                    <input class="w-75" type="time" id="settid1" />
+                </div>
+                <div class="col">
+                    <input class="w-75" type="time" id="settid2" />
+                </div>
+                <div class="col">
+                    <input class="w-75" type="time" id="settid3" />
+                </div>
+                <div class="col">
+                    <input class="w-75" type="time" id="settid4" />
+                </div>
+                <div class="col">
+                    <input class="w-75" type="time" id="settid5" />
+                </div>
+                <div class="col">
+                    <input class="w-75" type="time" id="settid6" />
+                </div>
+                <div class="col-12 ">
+                    <br /> <br />
+                </div>
+                <div class="col-12">
+                    <input type="button" id="reg" onclick="leggTil()" value="Lagre" class="btn btn-primary" />
+                </div>
+                <div class="col-12">
+                    <div id="feil" style="color: red"></div>
+                </div>
+            </div>
+        </form>
+
+    </div>
+
+
+
+
+
+</body>
+</html>

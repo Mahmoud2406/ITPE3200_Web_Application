@@ -1,0 +1,15 @@
+
+html, body {
+  height: 100%;
+  background-size: cover;
+  background: url("../../../wwwroot/nor-way.jpg") no-repeat fixed;
+}
+
+body {
+  min-height: 100vh !important;
+}
+
+.well {
+  background: rgb(255,255,255);
+  background: linear-gradient(27deg, rgba(255,255,255,1) 78%, rgba(255,255,255,0.5851717395942753) 100%);
+}

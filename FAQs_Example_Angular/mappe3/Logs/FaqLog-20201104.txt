@@ -1,0 +1,101 @@
+2020-11-04T00:01:55.1695758+01:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2020-11-04T00:01:55.1810017+01:00  [INF] Hosting environment: "Development" (c3307c92)
+2020-11-04T00:01:55.1829340+01:00  [INF] Content root path: "C:\Users\Mahmo\Documents\Mappe3Webapp\mappe3\mappe3" (b5d60022)
+2020-11-04T13:21:56.9662304+01:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2020-11-04T13:21:57.3517744+01:00  [INF] Hosting environment: "Development" (c3307c92)
+2020-11-04T13:21:57.3542446+01:00  [INF] Content root path: "C:\Users\Mahmo\Documents\Mappe3Webapp\mappe3\mappe3" (b5d60022)
+2020-11-04T17:00:06.2638311+01:00 80000077-0002-f700-b63f-84710c7967bb [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.Net.WebSockets.WebSocketException (0x80004005): The WebSocket is in an invalid state ('Aborted') for this operation. Valid states are: 'Open, CloseReceived'
+   at System.Net.WebSockets.WebSocketValidate.ThrowIfInvalidState(WebSocketState currentState, Boolean isDisposed, WebSocketState[] validStates)
+   at System.Net.WebSockets.ManagedWebSocket.CloseOutputAsyncCore(WebSocketCloseStatus closeStatus, String statusDescription, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.SpaServices.Extensions.Proxy.SpaProxy.PumpWebSocket(WebSocket source, WebSocket destination, Int32 bufferSize, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.SpaServices.Extensions.Proxy.SpaProxy.AcceptProxyWebSocketRequest(HttpContext context, Uri destinationUri, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.SpaServices.Extensions.Proxy.SpaProxy.PerformProxyRequest(HttpContext context, HttpClient httpClient, Task`1 baseUriTask, CancellationToken applicationStoppingToken, Boolean proxy404s)
+   at Microsoft.AspNetCore.Builder.SpaProxyingExtensions.<>c__DisplayClass2_0.<<UseProxyToSpaDevelopmentServer>b__0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-11-04T17:00:06.3267581+01:00 80000077-0002-f700-b63f-84710c7967bb [WRN] The response has already started, the error page middleware will not be executed. (e1dd4c0d)
+2020-11-04T17:00:06.3860055+01:00 80000077-0002-f700-b63f-84710c7967bb [ERR] Connection ID ""17798225737568747638"", Request ID ""80000077-0002-f700-b63f-84710c7967bb"": An unhandled exception was thrown by the application. (bf316047)
+System.Net.WebSockets.WebSocketException (0x80004005): The WebSocket is in an invalid state ('Aborted') for this operation. Valid states are: 'Open, CloseReceived'
+   at System.Net.WebSockets.WebSocketValidate.ThrowIfInvalidState(WebSocketState currentState, Boolean isDisposed, WebSocketState[] validStates)
+   at System.Net.WebSockets.ManagedWebSocket.CloseOutputAsyncCore(WebSocketCloseStatus closeStatus, String statusDescription, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.SpaServices.Extensions.Proxy.SpaProxy.PumpWebSocket(WebSocket source, WebSocket destination, Int32 bufferSize, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.SpaServices.Extensions.Proxy.SpaProxy.AcceptProxyWebSocketRequest(HttpContext context, Uri destinationUri, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.SpaServices.Extensions.Proxy.SpaProxy.PerformProxyRequest(HttpContext context, HttpClient httpClient, Task`1 baseUriTask, CancellationToken applicationStoppingToken, Boolean proxy404s)
+   at Microsoft.AspNetCore.Builder.SpaProxyingExtensions.<>c__DisplayClass2_0.<<UseProxyToSpaDevelopmentServer>b__0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContextOfT`1.ProcessRequestAsync()
+2020-11-04T17:07:23.7548321+01:00  [ERR] ERROR in ./node_modules/@ng-bootstrap/ng-bootstrap/fesm2015/ng-bootstrap.js
+Module build failed: Error: ENOENT: no such file or directory, open 'C:\Users\Mahmo\Documents\Mappe3Webapp\mappe3\mappe3\ClientApp\node_modules\@ng-bootstrap\ng-bootstrap\fesm2015\ng-bootstrap.js'
+    at Object.openSync (fs.js:462:3)
+    at Object.readFileSync (fs.js:364:35)
+    at Storage.provideSync (C:\Users\Mahmo\Documents\Mappe3Webapp\mappe3\mappe3\ClientApp\node_modules\enhanced-resolve\lib\CachedInputFileSystem.js:98:13)
+    at CachedInputFileSystem.readFileSync (C:\Users\Mahmo\Documents\Mappe3Webapp\mappe3\mappe3\ClientApp\node_modules\enhanced-resolve\lib\CachedInputFileSystem.js:259:32)
+    at Observable._subscribe (C:\Users\Mahmo\Documents\Mappe3Webapp\mappe3\mappe3\ClientApp\node_modules\@ngtools\webpack\src\webpack-input-host.js:35:51)
+    at Observable._trySubscribe (C:\Users\Mahmo\Documents\Mappe3Webapp\mappe3\mappe3\ClientApp\node_modules\@ngtools\webpack\node_modules\rxjs\internal\Observable.js:44:25)
+    at Observable.subscribe (C:\Users\Mahmo\Documents\Mappe3Webapp\mappe3\mappe3\ClientApp\node_modules\@ngtools\webpack\node_modules\rxjs\internal\Observable.js:30:22)
+    at SyncDelegateHost._doSyncCall (C:\Users\Mahmo\Documents\Mappe3Webapp\mappe3\mappe3\ClientApp\node_modules\@angular-devkit\core\src\virtual-fs\host\sync.js:22:20)
+    at SyncDelegateHost.read (C:\Users\Mahmo\Documents\Mappe3Webapp\mappe3\mappe3\ClientApp\node_modules\@angular-devkit\core\src\virtual-fs\host\sync.js:49:21)
+    at WebpackCompilerHost.readFileBuffer (C:\Users\Mahmo\Documents\Mappe3Webapp\mappe3\mappe3\ClientApp\node_modules\@ngtools\webpack\src\compiler_host.js:161:44)
+    at VirtualFileSystemDecorator.readFile (C:\Users\Mahmo\Documents\Mappe3Webapp\mappe3\mappe3\ClientApp\node_modules\@ngtools\webpack\src\virtual_file_system_decorator.js:42:54)
+    at processResource (C:\Users\Mahmo\Documents\Mappe3Webapp\mappe3\mappe3\ClientApp\node_modules\loader-runner\lib\LoaderRunner.js:202:11)
+    at iteratePitchingLoaders (C:\Users\Mahmo\Documents\Mappe3Webapp\mappe3\mappe3\ClientApp\node_modules\loader-runner\lib\LoaderRunner.js:158:10)
+ (1db40ec1)
+2020-11-04T17:21:08.6353267+01:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2020-11-04T17:21:08.6519885+01:00  [INF] Hosting environment: "Development" (c3307c92)
+2020-11-04T17:21:08.6563101+01:00  [INF] Content root path: "C:\Users\Mahmo\Documents\Mappe3Webapp\mappe3\mappe3" (b5d60022)
+2020-11-04T17:27:15.6784186+01:00  [ERR]     ERROR in src/app/liste/liste.ts(50,7): error TS2345: Argument of type '{ backdrop: "static"; keyboard: false; size: string; position: { top: string; left: string; }; }' is not assignable to parameter of type 'NgbModalOptions'.
+      Object literal may only specify known properties, and 'position' does not exist in type 'NgbModalOptions'.
+    
+ (a26a996e)
+2020-11-04T17:29:02.9074976+01:00  [ERR]     ERROR in src/app/liste/liste.ts(50,7): error TS2345: Argument of type '{ backdrop: "static"; keyboard: false; size: string; position: { top: string; left: string; }; }' is not assignable to parameter of type 'NgbModalOptions'.
+      Object literal may only specify known properties, and 'position' does not exist in type 'NgbModalOptions'.
+    
+ (a26a996e)
+2020-11-04T17:31:54.3902238+01:00  [ERR]     ERROR in src/app/liste/liste.ts(50,7): error TS2345: Argument of type '{ backdrop: "static"; keyboard: false; size: string; windowTopClass: string; }' is not assignable to parameter of type 'NgbModalOptions'.
+      Object literal may only specify known properties, and 'windowTopClass' does not exist in type 'NgbModalOptions'.
+    
+ (8379a738)
+2020-11-04T17:32:04.4537394+01:00  [ERR]     ERROR in src/app/liste/liste.ts(50,7): error TS2345: Argument of type '{ backdrop: "static"; keyboard: false; size: string; windowTopClass: string; }' is not assignable to parameter of type 'NgbModalOptions'.
+      Object literal may only specify known properties, and 'windowTopClass' does not exist in type 'NgbModalOptions'.
+    
+ (8379a738)
+2020-11-04T19:01:43.6371055+01:00 800002fc-0002-fb00-b63f-84710c7967bb [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.Net.WebSockets.WebSocketException (0x80004005): The WebSocket is in an invalid state ('Aborted') for this operation. Valid states are: 'Open, CloseReceived'
+   at System.Net.WebSockets.WebSocketValidate.ThrowIfInvalidState(WebSocketState currentState, Boolean isDisposed, WebSocketState[] validStates)
+   at System.Net.WebSockets.ManagedWebSocket.CloseOutputAsyncCore(WebSocketCloseStatus closeStatus, String statusDescription, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.SpaServices.Extensions.Proxy.SpaProxy.PumpWebSocket(WebSocket source, WebSocket destination, Int32 bufferSize, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.SpaServices.Extensions.Proxy.SpaProxy.AcceptProxyWebSocketRequest(HttpContext context, Uri destinationUri, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.SpaServices.Extensions.Proxy.SpaProxy.PerformProxyRequest(HttpContext context, HttpClient httpClient, Task`1 baseUriTask, CancellationToken applicationStoppingToken, Boolean proxy404s)
+   at Microsoft.AspNetCore.Builder.SpaProxyingExtensions.<>c__DisplayClass2_0.<<UseProxyToSpaDevelopmentServer>b__0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContextOfT`1.ProcessRequestAsync()
+2020-11-04T19:01:43.6601330+01:00 800002fc-0002-fb00-b63f-84710c7967bb [WRN] The response has already started, the error page middleware will not be executed. (e1dd4c0d)
+2020-11-04T19:01:43.7622471+01:00 800002fc-0002-fb00-b63f-84710c7967bb [ERR] Connection ID ""18086456113720460027"", Request ID ""800002fc-0002-fb00-b63f-84710c7967bb"": An unhandled exception was thrown by the application. (bf316047)
+System.Net.WebSockets.WebSocketException (0x80004005): The WebSocket is in an invalid state ('Aborted') for this operation. Valid states are: 'Open, CloseReceived'
+   at System.Net.WebSockets.WebSocketValidate.ThrowIfInvalidState(WebSocketState currentState, Boolean isDisposed, WebSocketState[] validStates)
+   at System.Net.WebSockets.ManagedWebSocket.CloseOutputAsyncCore(WebSocketCloseStatus closeStatus, String statusDescription, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.SpaServices.Extensions.Proxy.SpaProxy.PumpWebSocket(WebSocket source, WebSocket destination, Int32 bufferSize, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.SpaServices.Extensions.Proxy.SpaProxy.AcceptProxyWebSocketRequest(HttpContext context, Uri destinationUri, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.SpaServices.Extensions.Proxy.SpaProxy.PerformProxyRequest(HttpContext context, HttpClient httpClient, Task`1 baseUriTask, CancellationToken applicationStoppingToken, Boolean proxy404s)
+   at Microsoft.AspNetCore.Builder.SpaProxyingExtensions.<>c__DisplayClass2_0.<<UseProxyToSpaDevelopmentServer>b__0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContextOfT`1.ProcessRequestAsync()
+2020-11-04T19:12:32.1706118+01:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2020-11-04T19:12:32.1835232+01:00  [INF] Hosting environment: "Development" (c3307c92)
+2020-11-04T19:12:32.1859371+01:00  [INF] Content root path: "C:\Users\Mahmo\Documents\Mappe3Webapp\mappe3\mappe3" (b5d60022)
+2020-11-04T19:34:23.8752727+01:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2020-11-04T19:34:23.8869941+01:00  [INF] Hosting environment: "Development" (c3307c92)
+2020-11-04T19:34:23.8891102+01:00  [INF] Content root path: "C:\Users\Mahmo\Documents\Mappe3Webapp\mappe3\mappe3" (b5d60022)
+2020-11-04T19:46:38.4552779+01:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2020-11-04T19:46:38.4673906+01:00  [INF] Hosting environment: "Development" (c3307c92)
+2020-11-04T19:46:38.4697284+01:00  [INF] Content root path: "C:\Users\Mahmo\Documents\Mappe3Webapp\mappe3\mappe3" (b5d60022)
+2020-11-04T20:00:10.0560311+01:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2020-11-04T20:00:10.1016700+01:00  [INF] Hosting environment: "Development" (c3307c92)
+2020-11-04T20:00:10.1055391+01:00  [INF] Content root path: "C:\Users\Mahmo\Documents\Mappe3Webapp\mappe3\mappe3" (b5d60022)

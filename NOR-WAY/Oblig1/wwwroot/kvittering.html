@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Billettkjøp</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="index.css">
+    <script src="js/kvittering.js"></script>
+</head>
+<body style=" background-image: url(nor-way.jpg); background-repeat: no-repeat;" class="w-100 h-100">
+    <nav class="navbar navbar-expand-md navbar-light bg-transparent">
+        <a href="#" class="navbar-brand">
+            <img src="icon.svg" height="28" alt="CoolBrand">
+        </a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav">
+                <a href="index.html" class="nav-item nav-link active">Hjem</a>
+                <a href="#" class="nav-item nav-link">Billetter</a>
+                <a href="#" class="nav-item nav-link">Om oss</a>
+                <a href="logginn.html" class="nav-item nav-link">Innlogging</a>
+            </div>
+            <div class="navbar-nav ml-auto">
+
+            </div>
+            </div>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="well col-xs-10 col-sm-10 col-md-6 col-xs-offset-0 col-sm-offset-0 col-md-offset-3"">
+                <div class="row">
+
+                    <div class="col-xs-6 col-sm-6 col-md-6">
+                        <address>
+                            <strong>NOR-WAY</strong>
+                            <br>
+                            Nor-way Bussekspress AS
+                            <br>
+                            telefon - 22 31 31 50
+                            <br>
+                        </address>
+                    </div>
+                    <div class="col-xs-6 col-sm-6 col-md-6 text-right">
+                        <p>
+                            <em id="tid"></em>
+                        </p>
+
+                    </div>
+                </div>
+                <div class="row">
+                    <img src="qr.png" alt="Alternate Text" class="ml-auto mr-auto w-50" />
+                </div>
+                <div class="row">
+
+
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>Avgang</th>
+                                <th>Destinasjon</th>
+                                <th class="text-center">Tid</th>
+                            </tr>
+                        </thead>
+                        <tbody id="billett">
+                        </tbody>
+                    </table>
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th class="float-right">Totalpris: <strong id="pris"></strong></th>
+                            </tr>
+                        </thead>
+
+                    </table>
+
+                    <p class="w-100 col-4">
+                    </p>
+                    <p class="w-100 col-4">
+                        Takk for kjøpet!
+                    </p>
+                    <p class="w-100 col-4">
+                    </p>
+                    <div id="feil"></div>
+                </div>
+            </div>
+           </div>
+
+</body>
+</html>

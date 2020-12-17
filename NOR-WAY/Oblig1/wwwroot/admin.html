@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Billettkjøp</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+    <script src="js/admin.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body style=" background-image: url(nor-way.jpg); background-repeat: no-repeat;" class="w-100 h-100">
+
+    <nav class="navbar navbar-expand-md navbar-light bg-transparent">
+        <a href="#" class="navbar-brand">
+            <img src="icon.svg" height="28" alt="CoolBrand">
+        </a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav">
+                <a href="index.html" class="nav-item nav-link">Hjem</a>
+                <a href="#" class="nav-item nav-link">Billetter</a>
+                <a href="#" class="nav-item nav-link">Om oss</a>
+                <button onClick="loggut()" class="nav-item nav-link">Logg ut</button>
+            </div>
+            <div class="navbar-nav ml-auto">
+            </div>
+            </div>
+    </nav>
+
+
+
+
+    <div class="container-fluid">
+        <div class="row">
+
+
+            <div class="col-md-12 ">
+                <!-- Tabell buss -->
+                <table class="table bg-white ">
+                    <thead>
+                        <tr>
+                            <td colspan="4"> <h1 class="text-center"><strong><i class="fa fa-road" aria-hidden="true"></i> Ruter</strong></h1> </td>
+                        </tr>
+                        <tr>
+                            <th scope="col" class='align-middle'>Buss</th>
+                            <th scope="col" class='align-middle'>Rute</th>
+                            <th scope="col" class='align-middle'>Pris</th>
+
+                            <th scope="col">
+                                <a href="leggtil.html" class="btn btn-success btn-lg" id="leggtilstrekning">Legg til rute</a>
+                            </th>
+
+                        </tr>
+                    </thead>
+                    <tbody id="strekning">
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+</html>

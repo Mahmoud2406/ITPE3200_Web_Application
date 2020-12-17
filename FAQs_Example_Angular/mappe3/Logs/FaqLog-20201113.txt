@@ -1,0 +1,122 @@
+2020-11-13T00:06:08.0850987+01:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2020-11-13T00:06:08.0970115+01:00  [INF] Hosting environment: "Development" (c3307c92)
+2020-11-13T00:06:08.1001803+01:00  [INF] Content root path: "C:\Users\Mahmo\Documents\Mappe3Webapp\mappe3\mappe3" (b5d60022)
+2020-11-13T00:06:11.5630831+01:00  [ERR] 'ng' is not recognized as an internal or external command,
+ (11f6b5a5)
+2020-11-13T00:06:11.5658274+01:00  [ERR] operable program or batch file.
+npm ERR! code ELIFECYCLE
+ (50fce170)
+2020-11-13T00:06:11.5793737+01:00  [ERR] npm ERR! errno 1
+npm ERR! kunde_spa@0.0.0 start: `ng serve "--port" "58581"`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the kunde_spa@0.0.0 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+npm WARN Local package.json exists, but node_modules missing, did you mean to install?
+
+ (e4d9bfa6)
+2020-11-13T00:06:11.5825378+01:00  [ERR] npm ERR! A complete log of this run can be found in:
+ (e9dc2fc2)
+2020-11-13T00:06:12.9072808+01:00 8000015a-0002-fb00-b63f-84710c7967bb [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.AggregateException: One or more errors occurred. (One or more errors occurred. (The NPM script 'start' exited without indicating that the Angular CLI was listening for requests. The error output was: 'ng' is not recognized as an internal or external command,
+
+operable program or batch file.
+npm ERR! code ELIFECYCLE
+
+npm ERR! errno 1
+npm ERR! kunde_spa@0.0.0 start: `ng serve "--port" "58581"`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the kunde_spa@0.0.0 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+npm WARN Local package.json exists, but node_modules missing, did you mean to install?
+
+
+npm ERR! A complete log of this run can be found in:
+
+))
+ ---> System.AggregateException: One or more errors occurred. (The NPM script 'start' exited without indicating that the Angular CLI was listening for requests. The error output was: 'ng' is not recognized as an internal or external command,
+
+operable program or batch file.
+npm ERR! code ELIFECYCLE
+
+npm ERR! errno 1
+npm ERR! kunde_spa@0.0.0 start: `ng serve "--port" "58581"`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the kunde_spa@0.0.0 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+npm WARN Local package.json exists, but node_modules missing, did you mean to install?
+
+
+npm ERR! A complete log of this run can be found in:
+
+)
+ ---> System.InvalidOperationException: The NPM script 'start' exited without indicating that the Angular CLI was listening for requests. The error output was: 'ng' is not recognized as an internal or external command,
+
+operable program or batch file.
+npm ERR! code ELIFECYCLE
+
+npm ERR! errno 1
+npm ERR! kunde_spa@0.0.0 start: `ng serve "--port" "58581"`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the kunde_spa@0.0.0 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+npm WARN Local package.json exists, but node_modules missing, did you mean to install?
+
+
+npm ERR! A complete log of this run can be found in:
+
+
+ ---> System.IO.EndOfStreamException: Attempted to read past the end of the stream.
+   at Microsoft.AspNetCore.SpaServices.AngularCli.AngularCliMiddleware.StartAngularCliServerAsync(String sourcePath, String npmScriptName, ILogger logger)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.SpaServices.AngularCli.AngularCliMiddleware.StartAngularCliServerAsync(String sourcePath, String npmScriptName, ILogger logger)
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at Microsoft.AspNetCore.SpaServices.AngularCli.AngularCliMiddleware.<>c.<Attach>b__2_0(Task`1 task)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__274_0(Object obj)
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at Microsoft.AspNetCore.SpaServices.Extensions.Util.TaskTimeoutExtensions.WithTimeout[T](Task`1 task, TimeSpan timeoutDelay, String message)
+   at Microsoft.AspNetCore.SpaServices.Extensions.Proxy.SpaProxy.PerformProxyRequest(HttpContext context, HttpClient httpClient, Task`1 baseUriTask, CancellationToken applicationStoppingToken, Boolean proxy404s)
+   at Microsoft.AspNetCore.Builder.SpaProxyingExtensions.<>c__DisplayClass2_0.<<UseProxyToSpaDevelopmentServer>b__0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-11-13T00:15:17.1773363+01:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2020-11-13T00:15:17.2832574+01:00  [INF] Hosting environment: "Development" (c3307c92)
+2020-11-13T00:15:17.2874209+01:00  [INF] Content root path: "C:\Users\Mahmo\Documents\Mappe3Webapp\mappe3\mappe3" (b5d60022)
+2020-11-13T00:16:08.2862978+01:00  [ERR] ERROR in app/liste/liste.ts:9:25 - error TS2307: Cannot find module '@fortawesome/free-brands-svg-icons'.
+
+9 import { faQuora } from '@fortawesome/free-brands-svg-icons';
+                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+ (58dce68d)
+2020-11-13T00:17:21.9355111+01:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2020-11-13T00:17:22.0337231+01:00  [INF] Hosting environment: "Development" (c3307c92)
+2020-11-13T00:17:22.0504246+01:00  [INF] Content root path: "C:\Users\Mahmo\Documents\Mappe3Webapp\mappe3\mappe3" (b5d60022)
+2020-11-13T00:17:39.6488426+01:00  [ERR] ERROR in app/liste/liste.ts:16:12 - error TS2304: Cannot find name 'faQuora'.
+
+16   questn = faQuora;
+              ~~~~~~~
+
+ (1e4aa3c6)
+2020-11-13T00:18:24.9948856+01:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2020-11-13T00:18:25.0078570+01:00  [INF] Hosting environment: "Development" (c3307c92)
+2020-11-13T00:18:25.0102211+01:00  [INF] Content root path: "C:\Users\Mahmo\Documents\Mappe3Webapp\mappe3\mappe3" (b5d60022)
+2020-11-13T00:29:17.4914386+01:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2020-11-13T00:29:17.5078140+01:00  [INF] Hosting environment: "Development" (c3307c92)
+2020-11-13T00:29:17.5099073+01:00  [INF] Content root path: "C:\Users\Mahmo\Documents\Mappe3Webapp\mappe3\mappe3" (b5d60022)
+2020-11-13T00:39:36.1121109+01:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2020-11-13T00:39:36.1268517+01:00  [INF] Hosting environment: "Development" (c3307c92)
+2020-11-13T00:39:36.1286477+01:00  [INF] Content root path: "C:\Users\Mahmo\Documents\Mappe3Webapp\mappe3\mappe3\mappe3" (b5d60022)

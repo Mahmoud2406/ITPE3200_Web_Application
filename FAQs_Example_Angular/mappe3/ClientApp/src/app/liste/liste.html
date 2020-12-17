@@ -1,0 +1,347 @@
+<div class="container">
+  <div>
+    <div class="col-md-12">
+      <h2>Frequently Asked Questions (FAQs)</h2>
+      <div *ngIf="laster">Laster SPØRSMÅL.....</div>
+      <table class="table table-condensed ">
+        <thead>
+        </thead>
+
+
+        <tbody>
+          <tr>
+            <td>
+              <strong>Populære spørsmål</strong> <hr class="mt-3 mb-0" />
+            </td>
+          </tr>
+        </tbody>
+        <ngb-accordion #acc="ngbAccordion" activeIds="ngb-panel-0" class="bg-light range-accordion">
+          <ngb-panel style="background-color:red !important;">
+            <ng-template ngbPanelTitle>
+              <div class="w-100">
+                <span>Top 3 FAQs</span>
+                <span class="float-right"><fa-icon [icon]="down" size="lg"></fa-icon></span>
+              </div>
+            </ng-template>
+            <ng-template ngbPanelContent>
+              <tbody *ngFor="let question of allQuestions index as indexOfelement;">
+                <ng-container *ngIf="indexOfelement < 3 && question.answer">
+                  <tr valign="middle" *ngIf="!question.answer" class="shadow bg-light">
+                    <td class="align-middle" style="    border-left: 4px solid #d9534f">
+                      <h2 style=" color:#d9534f">Q.</h2>
+                    </td>
+                    <td class="w-100">
+                      {{question.question}}
+                    </td>
+                    <td class="text-center rating p-1" rowspan="2" *ngIf="question.answer">
+                      <button class="btn btnUp" (click)="oppdaterRating(question.rating.id, question.rating.rating+1, indexOfelement)"><fa-icon [icon]="up" size="lg"></fa-icon></button>
+                      <h6 class="text-center mb-0 text-dark  pb-0"> {{question.rating.rating}}</h6>
+                      <button class="btn  btnDown" (click)="oppdaterRating(question.rating.id, question.rating.rating-1, indexOfelement)"><fa-icon [icon]="down" size="lg"></fa-icon></button>
+                    </td>
+                    <td class="text-center rating p-1" rowspan="1" *ngIf="!question.answer">
+                      <button class="btn btnUp" (click)="oppdaterRating(question.rating.id, question.rating.rating+1, indexOfelement)"><fa-icon [icon]="up" size="lg"></fa-icon></button>
+                      <h6 class="text-center mb-0  text-dark pb-0"> {{question.rating.rating}}</h6>
+                      <button class="btn  btnDown" (click)="oppdaterRating(question.rating.id, question.rating.rating-1, indexOfelement)"><fa-icon [icon]="down" size="lg"></fa-icon></button>
+                    </td>
+                  </tr>
+                  <tr valign="middle" *ngIf="question.answer" class="bg-light border-dark border-primary">
+                    <td class="align-middle" style="border-left: 4px solid #d9534f">
+                      <h2 style=" color:#d9534f">Q.</h2>
+                    </td>
+                    <td class="w-100">
+                      {{question.question}}
+                    </td>
+                    <td class="text-center rating  p-1 w-100" rowspan="2" *ngIf="question.answer">
+                      <button class="btn btnUp" (click)="oppdaterRating(question.rating.id, question.rating.rating+1, indexOfelement)"><fa-icon [icon]="up" size="lg"></fa-icon></button>
+                      <h6 class="text-center mb-0 text-dark  pb-0"> {{question.rating.rating}}</h6>
+                      <button class="btn  btnDown" (click)="oppdaterRating(question.rating.id, question.rating.rating-1, indexOfelement)"><fa-icon [icon]="down" size="lg"></fa-icon></button>
+                    </td>
+                    <td class="text-center rating  p-1 w-100" rowspan="1" *ngIf="!question.answer">
+                      <button class="btn btnUp" (click)="oppdaterRating(question.rating.id, question.rating.rating+1, indexOfelement)"><fa-icon [icon]="up" size="lg"></fa-icon></button>
+                      <h6 class="text-center mb-0  text-dark  pb-0"> {{question.rating.rating}} </h6>
+                      <button class="btn  btnDown" (click)="oppdaterRating(question.rating.id, question.rating.rating-1, indexOfelement)"><fa-icon [icon]="down" size="lg"></fa-icon></button>
+                    </td>
+                  </tr>
+                  <tr *ngIf="question.answer" class="shadow">
+                    <td class="align-middle" style="    border-left: 4px solid #b3b3b3">
+                      <h2 style="    color: #b3b3b3;">A.</h2>
+                    </td>
+                    <td>{{question.answer}}</td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" class=""></td>
+                  </tr>
+                </ng-container>
+              </tbody>
+            </ng-template>
+          </ngb-panel>
+
+        </ngb-accordion>
+
+
+        <tbody>
+          <tr>
+            <td>
+              <strong>Kategorier</strong>  <hr class="mt-3 mb-0" />
+            </td>
+          </tr>
+        </tbody>
+
+
+        <ngb-accordion #acc="ngbAccordion" activeIds="ngb-panel-0" class="bg-light">
+          <ngb-panel style="background-color:red !important;">
+            <ng-template ngbPanelTitle>
+              <div class="w-100">
+                <span>Billetter og billetttyper</span>
+                <span class="float-right"><fa-icon [icon]="down" size="lg"></fa-icon></span>
+              </div>
+            </ng-template>
+            <ng-template ngbPanelContent>
+              <tbody *ngFor="let question of allQuestions index as indexOfelement;">
+                <ng-container *ngIf="question.category === 'billett' && question.answer">
+                  <tr valign="middle" *ngIf="!question.answer" class="shadow bg-light">
+                    <td class="align-middle" style="    border-left: 4px solid #d9534f">
+                      <h2 style=" color:#d9534f">Q.</h2>
+                    </td>
+                    <td class="w-100">
+                      {{question.question}}
+                    </td>
+                    <td class="text-center rating p-1" rowspan="2" *ngIf="question.answer">
+                      <button class="btn btnUp" (click)="oppdaterRating(question.rating.id, question.rating.rating+1, indexOfelement)"><fa-icon [icon]="up" size="lg"></fa-icon></button>
+                      <h6 class="text-center mb-0 text-dark  pb-0"> {{question.rating.rating}}</h6>
+                      <button class="btn  btnDown" (click)="oppdaterRating(question.rating.id, question.rating.rating-1, indexOfelement)"><fa-icon [icon]="down" size="lg"></fa-icon></button>
+                    </td>
+                    <td class="text-center rating p-1" rowspan="1" *ngIf="!question.answer">
+                      <button class="btn btnUp" (click)="oppdaterRating(question.rating.id, question.rating.rating+1, indexOfelement)"><fa-icon [icon]="up" size="lg"></fa-icon></button>
+                      <h6 class="text-center mb-0  text-dark pb-0"> {{question.rating.rating}}</h6>
+                      <button class="btn  btnDown" (click)="oppdaterRating(question.rating.id, question.rating.rating-1, indexOfelement)"><fa-icon [icon]="down" size="lg"></fa-icon></button>
+                    </td>
+                  </tr>
+                  <tr valign="middle" *ngIf="question.answer" class="bg-light border-dark border-primary">
+                    <td class="align-middle" style="border-left: 4px solid #d9534f">
+                      <h2 style=" color:#d9534f">Q.</h2>
+                    </td>
+                    <td class="w-100">
+                      {{question.question}}
+                    </td>
+                    <td class="text-center rating  p-1 w-100" rowspan="2" *ngIf="question.answer">
+                      <button class="btn btnUp" (click)="oppdaterRating(question.rating.id, question.rating.rating+1, indexOfelement)"><fa-icon [icon]="up" size="lg"></fa-icon></button>
+                      <h6 class="text-center mb-0 text-dark  pb-0"> {{question.rating.rating}}</h6>
+                      <button class="btn  btnDown" (click)="oppdaterRating(question.rating.id, question.rating.rating-1, indexOfelement)"><fa-icon [icon]="down" size="lg"></fa-icon></button>
+                    </td>
+                    <td class="text-center rating  p-1 w-100" rowspan="1" *ngIf="!question.answer">
+                      <button class="btn btnUp" (click)="oppdaterRating(question.rating.id, question.rating.rating+1, indexOfelement)"><fa-icon [icon]="up" size="lg"></fa-icon></button>
+                      <h6 class="text-center mb-0  text-dark  pb-0"> {{question.rating.rating}} </h6>
+                      <button class="btn  btnDown" (click)="oppdaterRating(question.rating.id, question.rating.rating-1, indexOfelement)"><fa-icon [icon]="down" size="lg"></fa-icon></button>
+                    </td>
+                  </tr>
+                  <tr *ngIf="question.answer" class="shadow">
+                    <td class="align-middle" style="    border-left: 4px solid #b3b3b3">
+                      <h2 style="    color: #b3b3b3;">A.</h2>
+                    </td>
+                    <td>{{question.answer}}</td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" class=""></td>
+                  </tr>
+                </ng-container>
+              </tbody>
+            </ng-template>
+          </ngb-panel>
+
+        </ngb-accordion>
+
+
+
+
+
+        <ngb-accordion #acc="ngbAccordion" activeIds="ngb-panel-0" class="bg-light">
+          <ngb-panel style="background-color:red !important;">
+            <ng-template ngbPanelTitle>
+              <div class="w-100">
+                <span>Kjøpsvilkår</span>
+                <span class="float-right"><fa-icon [icon]="down" size="lg"></fa-icon></span>
+              </div>
+            </ng-template>
+            <ng-template ngbPanelContent>
+              <tbody *ngFor="let question of allQuestions index as indexOfelement;">
+                <ng-container *ngIf="question.category ==='kjøpsvilkår' && question.answer">
+                  <tr valign="middle" *ngIf="!question.answer" class="shadow bg-light">
+                    <td class="align-middle" style="    border-left: 4px solid #d9534f">
+                      <h2 style=" color:#d9534f">Q.</h2>
+                    </td>
+                    <td class="w-100">
+                      {{question.question}}
+                    </td>
+                    <td class="text-center rating p-1" rowspan="2" *ngIf="question.answer">
+                      <button class="btn btnUp" (click)="oppdaterRating(question.rating.id, question.rating.rating+1, indexOfelement)"><fa-icon [icon]="up" size="lg"></fa-icon></button>
+                      <h6 class="text-center mb-0 text-dark  pb-0"> {{question.rating.rating}}</h6>
+                      <button class="btn  btnDown" (click)="oppdaterRating(question.rating.id, question.rating.rating-1, indexOfelement)"><fa-icon [icon]="down" size="lg"></fa-icon></button>
+                    </td>
+                    <td class="text-center rating p-1" rowspan="1" *ngIf="!question.answer">
+                      <button class="btn btnUp" (click)="oppdaterRating(question.rating.id, question.rating.rating+1, indexOfelement)"><fa-icon [icon]="up" size="lg"></fa-icon></button>
+                      <h6 class="text-center mb-0  text-dark pb-0"> {{question.rating.rating}}</h6>
+                      <button class="btn  btnDown" (click)="oppdaterRating(question.rating.id, question.rating.rating-1, indexOfelement)"><fa-icon [icon]="down" size="lg"></fa-icon></button>
+                    </td>
+                  </tr>
+                  <tr valign="middle" *ngIf="question.answer" class="bg-light border-dark border-primary">
+                    <td class="align-middle" style="border-left: 4px solid #d9534f">
+                      <h2 style=" color:#d9534f">Q.</h2>
+                    </td>
+                    <td class="w-100">
+                      {{question.question}}
+                    </td>
+                    <td class="text-center rating  p-1 w-100" rowspan="2" *ngIf="question.answer">
+                      <button class="btn btnUp" (click)="oppdaterRating(question.rating.id, question.rating.rating+1, indexOfelement)"><fa-icon [icon]="up" size="lg"></fa-icon></button>
+                      <h6 class="text-center mb-0 text-dark  pb-0"> {{question.rating.rating}}</h6>
+                      <button class="btn  btnDown" (click)="oppdaterRating(question.rating.id, question.rating.rating-1, indexOfelement)"><fa-icon [icon]="down" size="lg"></fa-icon></button>
+                    </td>
+                    <td class="text-center rating  p-1 w-100" rowspan="1" *ngIf="!question.answer">
+                      <button class="btn btnUp" (click)="oppdaterRating(question.rating.id, question.rating.rating+1, indexOfelement)"><fa-icon [icon]="up" size="lg"></fa-icon></button>
+                      <h6 class="text-center mb-0  text-dark  pb-0"> {{question.rating.rating}} </h6>
+                      <button class="btn  btnDown" (click)="oppdaterRating(question.rating.id, question.rating.rating-1, indexOfelement)"><fa-icon [icon]="down" size="lg"></fa-icon></button>
+                    </td>
+                  </tr>
+                  <tr *ngIf="question.answer" class="shadow">
+                    <td class="align-middle" style="    border-left: 4px solid #b3b3b3">
+                      <h2 style="    color: #b3b3b3;">A.</h2>
+                    </td>
+                    <td>{{question.answer}}</td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" class=""></td>
+                  </tr>
+                </ng-container>
+              </tbody>
+            </ng-template>
+          </ngb-panel>
+
+        </ngb-accordion>
+
+
+
+        <ngb-accordion #acc="ngbAccordion" activeIds="ngb-panel-0" class="bg-light">
+          <ngb-panel style="background-color:red !important;">
+            <ng-template ngbPanelTitle>
+              <div class="w-100">
+                <span>Avganger og ruter</span>
+                <span class="float-right"><fa-icon [icon]="down" size="lg"></fa-icon></span>
+              </div>
+            </ng-template>
+            <ng-template ngbPanelContent>
+              <tbody *ngFor="let question of allQuestions index as indexOfelement;">
+                <ng-container *ngIf="question.category ==='avganger' && question.answer">
+                  <tr valign="middle" *ngIf="!question.answer" class="shadow bg-light">
+                    <td class="align-middle" style="    border-left: 4px solid #d9534f">
+                      <h2 style=" color:#d9534f">Q.</h2>
+                    </td>
+                    <td class="w-100">
+                      {{question.question}}
+                    </td>
+                    <td class="text-center rating p-1" rowspan="2" *ngIf="question.answer">
+                      <button class="btn btnUp" (click)="oppdaterRating(question.rating.id, question.rating.rating+1, indexOfelement)"><fa-icon [icon]="up" size="lg"></fa-icon></button>
+                      <h6 class="text-center mb-0 text-dark  pb-0"> {{question.rating.rating}}</h6>
+                      <button class="btn  btnDown" (click)="oppdaterRating(question.rating.id, question.rating.rating-1, indexOfelement)"><fa-icon [icon]="down" size="lg"></fa-icon></button>
+                    </td>
+
+                  </tr>
+                  <tr valign="middle" *ngIf="question.answer" class="bg-light border-dark border-primary">
+                    <td class="align-middle" style="border-left: 4px solid #d9534f">
+                      <h2 style=" color:#d9534f">Q.</h2>
+                    </td>
+                    <td class="w-100">
+                      {{question.question}}
+                    </td>
+                    <td class="text-center rating p-1 w-100" rowspan="2" *ngIf="question.answer">
+                      <button class="btn btnUp" (click)="oppdaterRating(question.rating.id, question.rating.rating+1, indexOfelement)"><fa-icon [icon]="up" size="lg"></fa-icon></button>
+                      <h6 class="text-center mb-0 text-dark  pb-0"> {{question.rating.rating}}</h6>
+                      <button class="btn  btnDown" (click)="oppdaterRating(question.rating.id, question.rating.rating-1, indexOfelement)"><fa-icon [icon]="down" size="lg"></fa-icon></button>
+                    </td>
+
+                  </tr>
+                  <tr *ngIf="question.answer" class="shadow">
+                    <td class="align-middle" style="    border-left: 4px solid #b3b3b3">
+                      <h2 style="    color: #b3b3b3;">A.</h2>
+                    </td>
+                    <td>{{question.answer}}</td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" class=""></td>
+                  </tr>
+                </ng-container>
+              </tbody>
+            </ng-template>
+          </ngb-panel>
+
+        </ngb-accordion>
+
+        <tbody>
+          <tr>
+            <td>
+              <strong>Stilte spørsmål  </strong>   <hr class="mt-3 mb-0" />
+            </td>
+          </tr>
+        </tbody>
+
+        <ngb-accordion #acc="ngbAccordion" activeIds="ngb-panel-0" class="bg-light">
+          <ngb-panel style="background-color:red !important;">
+            <ng-template ngbPanelTitle>
+              <div class="w-100">
+                <span>Venter på svar</span>
+                <span class="float-right"><fa-icon [icon]="down" size="lg"></fa-icon></span>
+              </div>
+            </ng-template>
+            <ng-template ngbPanelContent>
+              <tbody *ngFor="let question of allQuestions index as indexOfelement;">
+                <ng-container *ngIf="!question.answer">
+                  <tr valign="middle" *ngIf="!question.answer" class="shadow bg-light">
+                    <td class="align-middle" style="    border-left: 4px solid #d9534f">
+                      <h2 style=" color:#d9534f">Q.</h2>
+                    </td>
+                    <td class="w-100">
+                      {{question.question}}
+                    </td> 
+                    <td class="text-center rating shadow p-1 w-100" rowspan="1">
+                      <button  disabled class="btn btnUp" (click)="oppdaterRating(question.rating.id, question.rating.rating+1, indexOfelement)"><fa-icon [icon]="up" size="lg"></fa-icon></button>
+                      <h6 class="text-center mb-0 text-dark  pb-0"> {{question.rating.rating}}</h6>
+                      <button disabled class="btn  btnDown" (click)="oppdaterRating(question.rating.id, question.rating.rating-1, indexOfelement)"><fa-icon [icon]="down" size="lg"></fa-icon></button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" class=""></td>
+                  </tr>
+                </ng-container>
+              </tbody>
+            </ng-template>
+          </ngb-panel>
+
+
+
+        </ngb-accordion>
+
+
+
+
+
+
+
+
+        <tbody>
+          <tr rowspan="2">
+            <td colspan="3" class="">
+              <button type="button" class='btn btn-outline-dark float-right' routerLink="/" (click)="stillSporsmaal()">  Still et spørsmål  <fa-icon [icon]="faQuestion"></fa-icon></button>
+            </td>
+          </tr>
+        </tbody>
+
+
+      </table>
+
+
+    </div>
+
+
+</div>
+
+
+

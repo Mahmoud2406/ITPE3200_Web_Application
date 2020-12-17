@@ -1,0 +1,57 @@
+﻿using System;
+using System.Collections.Generic;
+
+
+.textShadow {
+    text-shadow: 4px 4px 7px rgba(150, 150, 150, 1);
+}
+.top-left {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: brown;
+}
+
+.invoice-head td {
+    padding: 0 8px;
+}
+
+.container {
+    padding-top: 30px;
+}
+
+.invoice-body {
+    background-color: transparent;
+}
+
+.invoice-thank {
+    margin-top: 60px;
+    padding: 5px;
+}
+
+address {
+    margin-top: 15px;
+}
+
+body,div,button,a ,input{
+  font-size: 20px !important;
+    font-family:Bahnschrift;
+}
+
+.checkboxRed {
+    outline: 1px solid red;
+}
+
+.fa fa-map-marker {
+    margin-top: 20%;
+}
+
+.container 
+{
+    padding:20px;
+}
+.pager {
+    butt-size: 10px;
+}
+

@@ -1,0 +1,561 @@
+2020-11-02T15:59:54.2476652+01:00  [FTL] Application startup exception (6c57a5ba)
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Microsoft.Data.Sqlite.SqliteConnection.Open()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteDatabaseCreator.Exists()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabaseCreator.EnsureCreated()
+   at Microsoft.EntityFrameworkCore.Infrastructure.DatabaseFacade.EnsureCreated()
+   at mappe3.DAL.FaqContext..ctor(DbContextOptions`1 options) in C:\Users\Mahmo\Documents\Mappe3Webapp\mappe3\mappe3\DAL\FaqContext.cs:line 38
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite singletonCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass1_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetService[T](IServiceProvider provider)
+   at mappe3.DAL.DBInit.Seed(IApplicationBuilder app) in C:\Users\Mahmo\Documents\Mappe3Webapp\mappe3\mappe3\DAL\DBInit.cs:line 17
+   at mappe3.Startup.Configure(IApplicationBuilder app, IWebHostEnvironment env, ILoggerFactory loggerFactory) in C:\Users\Mahmo\Documents\Mappe3Webapp\mappe3\mappe3\Startup.cs:line 43
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.Invoke(Object instance, IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.<>c__DisplayClass4_0.<Build>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.<>c__DisplayClass13_0.<UseStartup>b__2(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Mvc.Filters.MiddlewareFilterBuilderStartupFilter.<>c__DisplayClass0_0.<Configure>g__MiddlewareFilterBuilder|0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISServerSetupFilter.<>c__DisplayClass2_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+2020-11-02T16:03:04.1976264+01:00  [FTL] Application startup exception (6c57a5ba)
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Microsoft.Data.Sqlite.SqliteConnection.Open()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteDatabaseCreator.Exists()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabaseCreator.EnsureCreated()
+   at Microsoft.EntityFrameworkCore.Infrastructure.DatabaseFacade.EnsureCreated()
+   at mappe3.DAL.FaqContext..ctor(DbContextOptions`1 options) in C:\Users\Mahmo\Documents\Mappe3Webapp\mappe3\mappe3\DAL\FaqContext.cs:line 38
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite singletonCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass1_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetService[T](IServiceProvider provider)
+   at mappe3.DAL.DBInit.Seed(IApplicationBuilder app) in C:\Users\Mahmo\Documents\Mappe3Webapp\mappe3\mappe3\DAL\DBInit.cs:line 14
+   at mappe3.Startup.Configure(IApplicationBuilder app, IWebHostEnvironment env, ILoggerFactory loggerFactory) in C:\Users\Mahmo\Documents\Mappe3Webapp\mappe3\mappe3\Startup.cs:line 44
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.Invoke(Object instance, IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.<>c__DisplayClass4_0.<Build>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.<>c__DisplayClass13_0.<UseStartup>b__2(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Mvc.Filters.MiddlewareFilterBuilderStartupFilter.<>c__DisplayClass0_0.<Configure>g__MiddlewareFilterBuilder|0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISServerSetupFilter.<>c__DisplayClass2_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+2020-11-02T16:13:36.1706178+01:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2020-11-02T16:13:36.1858093+01:00  [INF] Hosting environment: "Development" (c3307c92)
+2020-11-02T16:13:36.1886339+01:00  [INF] Content root path: "C:\Users\Mahmo\Documents\Mappe3Webapp\mappe3\mappe3" (b5d60022)
+2020-11-02T16:46:01.4090974+01:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2020-11-02T16:46:01.4208773+01:00  [INF] Hosting environment: "Development" (c3307c92)
+2020-11-02T16:46:01.4232488+01:00  [INF] Content root path: "C:\Users\Mahmo\Documents\Mappe3Webapp\mappe3\mappe3" (b5d60022)
+2020-11-02T16:46:21.2545297+01:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2020-11-02T16:46:21.2672772+01:00  [INF] Hosting environment: "Development" (c3307c92)
+2020-11-02T16:46:21.2694368+01:00  [INF] Content root path: "C:\Users\Mahmo\Documents\Mappe3Webapp\mappe3\mappe3" (b5d60022)
+2020-11-02T16:50:29.7682045+01:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2020-11-02T16:50:29.7811947+01:00  [INF] Hosting environment: "Development" (c3307c92)
+2020-11-02T16:50:29.7835179+01:00  [INF] Content root path: "C:\Users\Mahmo\Documents\Mappe3Webapp\mappe3\mappe3" (b5d60022)
+2020-11-02T16:54:54.3123001+01:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2020-11-02T16:54:54.3243311+01:00  [INF] Hosting environment: "Development" (c3307c92)
+2020-11-02T16:54:54.3266866+01:00  [INF] Content root path: "C:\Users\Mahmo\Documents\Mappe3Webapp\mappe3\mappe3" (b5d60022)
+2020-11-02T16:55:05.6503091+01:00  [ERR] ERROR in ../../../node_modules/@ng-bootstrap/ng-bootstrap/accordion/accordion.d.ts:1:75 - error TS2307: Cannot find module '@angular/core'.
+
+1 import { AfterContentChecked, EventEmitter, QueryList, TemplateRef } from '@angular/core';
+                                                                            ~~~~~~~~~~~~~~~
+../../../node_modules/@ng-bootstrap/ng-bootstrap/alert/alert.d.ts:1:87 - error TS2307: Cannot find module '@angular/core'.
+
+1 import { EventEmitter, Renderer2, ElementRef, OnChanges, OnInit, SimpleChanges } from '@angular/core';
+                                                                                        ~~~~~~~~~~~~~~~
+../../../node_modules/@ng-bootstrap/ng-bootstrap/buttons/checkbox.d.ts:1:35 - error TS2307: Cannot find module '@angular/core'.
+
+1 import { ChangeDetectorRef } from '@angular/core';
+                                    ~~~~~~~~~~~~~~~
+../../../node_modules/@ng-bootstrap/ng-bootstrap/buttons/checkbox.d.ts:2:38 - error TS2307: Cannot find module '@angular/forms'.
+
+2 import { ControlValueAccessor } from '@angular/forms';
+                                       ~~~~~~~~~~~~~~~~
+../../../node_modules/@ng-bootstrap/ng-bootstrap/buttons/radio.d.ts:1:69 - error TS2307: Cannot find module '@angular/core'.
+
+1 import { ChangeDetectorRef, ElementRef, OnDestroy, Renderer2 } from '@angular/core';
+                                                                      ~~~~~~~~~~~~~~~
+../../../node_modules/@ng-bootstrap/ng-bootstrap/buttons/radio.d.ts:2:38 - error TS2307: Cannot find module '@angular/forms'.
+
+2 import { ControlValueAccessor } from '@angular/forms';
+ (93473968)
+2020-11-02T16:55:05.6566597+01:00  [ERR]                                        ~~~~~~~~~~~~~~~~
+../../../node_modules/@ng-bootstrap/ng-bootstrap/carousel/carousel.d.ts:1:131 - error TS2307: Cannot find module '@angular/core'.
+
+1 import { AfterContentChecked, AfterContentInit, ChangeDetectorRef, EventEmitter, NgZone, OnDestroy, QueryList, TemplateRef } from '@angular/core';
+                                                                                                                                    ~~~~~~~~~~~~~~~
+../../../node_modules/@ng-bootstrap/ng-bootstrap/datepicker/datepicker-config.d.ts:1:29 - error TS2307: Cannot find module '@angular/core'.
+
+1 import { TemplateRef } from '@angular/core';
+                              ~~~~~~~~~~~~~~~
+../../../node_modules/@ng-bootstrap/ng-bootstrap/datepicker/datepicker-input.d.ts:1:174 - error TS2307: Cannot find module '@angular/core'.
+
+1 import { ChangeDetectorRef, ComponentFactoryResolver, ElementRef, EventEmitter, NgZone, OnChanges, OnDestroy, Renderer2, SimpleChanges, TemplateRef, ViewContainerRef } from '@angular/core';
+                                                                                                                                                                               ~~~~~~~~~~~~~~~
+../../../node_modules/@ng-bootstrap/ng-bootstrap/datepicker/datepicker-input.d.ts:2:66 - error TS2307: Cannot find module '@angular/forms'.
+
+2 import { AbstractControl, ControlValueAccessor, Validator } from '@angular/forms';
+                                                                   ~~~~~~~~~~~~~~~~
+../../../node_modules/@ng-bootstrap/ng-bootstrap/datepicker/datepicker-navigation-select.d.ts:1:71 - error TS2307: Cannot find module '@angular/core'.
+
+1 import { EventEmitter, AfterViewChecked, ElementRef, Renderer2 } from '@angular/core';
+                                                                        ~~~~~~~~~~~~~~~
+../../../node_modules/@ng-bootstrap/ng-bootstrap/datepicker/datepicker-navigation.d.ts:1:30 - error TS2307: Cannot find module '@angular/core'.
+
+1 import { EventEmitter } from '@angular/core';
+                               ~~~~~~~~~~~~~~~
+../../../node_modules/@ng-bootstrap/ng-bootstrap/datepicker/datepicker-service.d.ts:5:28 - error TS2307: Cannot find module 'rxjs'.
+
+5 import { Observable } from 'rxjs';
+                             ~~~~~~
+../../../node_modules/@ng-bootstrap/ng-bootstrap/datepicker/datepicker.d.ts:1:127 - error TS2307: Cannot find module '@angular/core'.
+
+1 import { ChangeDetectorRef, ElementRef, EventEmitter, NgZone, OnChanges, OnDestroy, OnInit, SimpleChanges, TemplateRef } from '@angular/core';
+                                                                                                                                ~~~~~~~~~~~~~~~
+../../../node_modules/@ng-bootstrap/ng-bootstrap/datepicker/datepicker.d.ts:2:38 - error TS2307: Cannot find module '@angular/forms'.
+
+2 import { ControlValueAccessor } from '@angular/forms';
+                                       ~~~~~~~~~~~~~~~~
+../../../node_modules/@ng-bootstrap/ng-bootstrap/datepicker/datepicker.d.ts:13:21 - error TS2307: Cannot find module '@angular/core'.
+
+13     provide: import("@angular/core").InjectionToken<ControlValueAccessor>;
+                       ~~~~~~~~~~~~~~~
+../../../node_modules/@ng-bootstrap/ng-bootstrap/datepicker/datepicker.d.ts:14:25 - error TS2307: Cannot find module '@angular/core'.
+
+14     useExisting: import("@angular/core").Type<any>;
+                           ~~~~~~~~~~~~~~~
+../../../node_modules/@ng-bootstrap/ng-bootstrap/dropdown/dropdown.d.ts:1:135 - error TS2307: Cannot find module '@angular/core'.
+
+1 import { ChangeDetectorRef, ElementRef, EventEmitter, NgZone, AfterContentInit, OnDestroy, QueryList, Renderer2, SimpleChanges } from '@angular/core';
+                                                                                                                                        ~~~~~~~~~~~~~~~
+../../../node_modules/@ng-bootstrap/ng-bootstrap/modal/modal-config.d.ts:1:26 - error TS2307: Cannot find module '@angular/core'.
+
+1 import { Injector } from '@angular/core';
+                           ~~~~~~~~~~~~~~~
+../../../node_modules/@ng-bootstrap/ng-bootstrap/modal/modal-ref.d.ts:1:30 - error TS2307: Cannot find module '@angular/core'.
+
+1 import { ComponentRef } from '@angular/core';
+                               ~~~~~~~~~~~~~~~
+../../../node_modules/@ng-bootstrap/ng-bootstrap/modal/modal-stack.d.ts:1:94 - error TS2307: Cannot find module '@angular/core'.
+
+1 import { ApplicationRef, ComponentFactoryResolver, Injector, NgZone, RendererFactory2 } from '@angular/core';
+                                                                                               ~~~~~~~~~~~~~~~
+../../../node_modules/@ng-bootstrap/ng-bootstrap/modal/modal-window.d.ts:1:84 - error TS2307: Cannot find module '@angular/core'.
+
+1 import { AfterViewInit, ElementRef, EventEmitter, NgZone, OnDestroy, OnInit } from '@angular/core';
+                                                                                     ~~~~~~~~~~~~~~~
+../../../node_modules/@ng-bootstrap/ng-bootstrap/modal/modal.d.ts:1:52 - error TS2307: Cannot find module '@angular/core'.
+
+1 import { Injector, ComponentFactoryResolver } from '@angular/core';
+                                                     ~~~~~~~~~~~~~~~
+../../../node_modules/@ng-bootstrap/ng-bootstrap/nav/nav.d.ts:1:132 - error TS2307: Cannot find module '@angular/core'.
+
+1 import { AfterContentChecked, AfterContentInit, ChangeDetectorRef, ElementRef, EventEmitter, OnInit, QueryList, TemplateRef } from '@angular/core';
+                                                                                                                                     ~~~~~~~~~~~~~~~
+../../../node_modules/@ng-bootstrap/ng-bootstrap/pagination/pagination.d.ts:1:69 - error TS2307: Cannot find module '@angular/core'.
+
+1 import { EventEmitter, OnChanges, SimpleChanges, TemplateRef } from '@angular/core';
+                                                                      ~~~~~~~~~~~~~~~
+../../../node_modules/@ng-bootstrap/ng-bootstrap/popover/popover.d.ts:1:208 - error TS2307: Cannot find module '@angular/core'.
+
+1 import { EventEmitter, OnInit, OnDestroy, OnChanges, Injector, Renderer2, ElementRef, TemplateRef, ViewContainerRef, ComponentFactoryResolver, NgZone, SimpleChanges, ChangeDetectorRef, ApplicationRef } from '@angular/core';
+                                                                                                                                                                                                                 ~~~~~~~~~~~~~~~
+../../../node_modules/@ng-bootstrap/ng-bootstrap/rating/rating.d.ts:1:96 - error TS2307: Cannot find module '@angular/core'.
+ (b5c5a5eb)
+2020-11-02T16:55:25.0753051+01:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2020-11-02T16:55:25.0901775+01:00  [INF] Hosting environment: "Development" (c3307c92)
+2020-11-02T16:55:25.0924302+01:00  [INF] Content root path: "C:\Users\Mahmo\Documents\Mappe3Webapp\mappe3\mappe3" (b5d60022)
+2020-11-02T16:55:36.2027883+01:00  [ERR] ERROR in ../../../node_modules/@ng-bootstrap/ng-bootstrap/accordion/accordion.d.ts:1:75 - error TS2307: Cannot find module '@angular/core'.
+
+1 import { AfterContentChecked, EventEmitter, QueryList, TemplateRef } from '@angular/core';
+                                                                            ~~~~~~~~~~~~~~~
+../../../node_modules/@ng-bootstrap/ng-bootstrap/alert/alert.d.ts:1:87 - error TS2307: Cannot find module '@angular/core'.
+
+1 import { EventEmitter, Renderer2, ElementRef, OnChanges, OnInit, SimpleChanges } from '@angular/core';
+                                                                                        ~~~~~~~~~~~~~~~
+../../../node_modules/@ng-bootstrap/ng-bootstrap/buttons/checkbox.d.ts:1:35 - error TS2307: Cannot find module '@angular/core'.
+
+1 import { ChangeDetectorRef } from '@angular/core';
+                                    ~~~~~~~~~~~~~~~
+../../../node_modules/@ng-bootstrap/ng-bootstrap/buttons/checkbox.d.ts:2:38 - error TS2307: Cannot find module '@angular/forms'.
+
+2 import { ControlValueAccessor } from '@angular/forms';
+                                       ~~~~~~~~~~~~~~~~
+../../../node_modules/@ng-bootstrap/ng-bootstrap/buttons/radio.d.ts:1:69 - error TS2307: Cannot find module '@angular/core'.
+
+1 import { ChangeDetectorRef, ElementRef, OnDestroy, Renderer2 } from '@angular/core';
+                                                                      ~~~~~~~~~~~~~~~
+../../../node_modules/@ng-bootstrap/ng-bootstrap/buttons/radio.d.ts:2:38 - error TS2307: Cannot find module '@angular/forms'.
+
+2 import { ControlValueAccessor } from '@angular/forms';
+ (93473968)
+2020-11-02T16:55:36.2171806+01:00  [ERR]                                        ~~~~~~~~~~~~~~~~
+../../../node_modules/@ng-bootstrap/ng-bootstrap/carousel/carousel.d.ts:1:131 - error TS2307: Cannot find module '@angular/core'.
+
+1 import { AfterContentChecked, AfterContentInit, ChangeDetectorRef, EventEmitter, NgZone, OnDestroy, QueryList, TemplateRef } from '@angular/core';
+                                                                                                                                    ~~~~~~~~~~~~~~~
+../../../node_modules/@ng-bootstrap/ng-bootstrap/datepicker/datepicker-config.d.ts:1:29 - error TS2307: Cannot find module '@angular/core'.
+
+1 import { TemplateRef } from '@angular/core';
+                              ~~~~~~~~~~~~~~~
+../../../node_modules/@ng-bootstrap/ng-bootstrap/datepicker/datepicker-input.d.ts:1:174 - error TS2307: Cannot find module '@angular/core'.
+
+1 import { ChangeDetectorRef, ComponentFactoryResolver, ElementRef, EventEmitter, NgZone, OnChanges, OnDestroy, Renderer2, SimpleChanges, TemplateRef, ViewContainerRef } from '@angular/core';
+                                                                                                                                                                               ~~~~~~~~~~~~~~~
+../../../node_modules/@ng-bootstrap/ng-bootstrap/datepicker/datepicker-input.d.ts:2:66 - error TS2307: Cannot find module '@angular/forms'.
+
+2 import { AbstractControl, ControlValueAccessor, Validator } from '@angular/forms';
+                                                                   ~~~~~~~~~~~~~~~~
+../../../node_modules/@ng-bootstrap/ng-bootstrap/datepicker/datepicker-navigation-select.d.ts:1:71 - error TS2307: Cannot find module '@angular/core'.
+
+1 import { EventEmitter, AfterViewChecked, ElementRef, Renderer2 } from '@angular/core';
+                                                                        ~~~~~~~~~~~~~~~
+../../../node_modules/@ng-bootstrap/ng-bootstrap/datepicker/datepicker-navigation.d.ts:1:30 - error TS2307: Cannot find module '@angular/core'.
+
+1 import { EventEmitter } from '@angular/core';
+                               ~~~~~~~~~~~~~~~
+../../../node_modules/@ng-bootstrap/ng-bootstrap/datepicker/datepicker-service.d.ts:5:28 - error TS2307: Cannot find module 'rxjs'.
+
+5 import { Observable } from 'rxjs';
+                             ~~~~~~
+../../../node_modules/@ng-bootstrap/ng-bootstrap/datepicker/datepicker.d.ts:1:127 - error TS2307: Cannot find module '@angular/core'.
+
+1 import { ChangeDetectorRef, ElementRef, EventEmitter, NgZone, OnChanges, OnDestroy, OnInit, SimpleChanges, TemplateRef } from '@angular/core';
+                                                                                                                                ~~~~~~~~~~~~~~~
+../../../node_modules/@ng-bootstrap/ng-bootstrap/datepicker/datepicker.d.ts:2:38 - error TS2307: Cannot find module '@angular/forms'.
+
+2 import { ControlValueAccessor } from '@angular/forms';
+                                       ~~~~~~~~~~~~~~~~
+../../../node_modules/@ng-bootstrap/ng-bootstrap/datepicker/datepicker.d.ts:13:21 - error TS2307: Cannot find module '@angular/core'.
+
+13     provide: import("@angular/core").InjectionToken<ControlValueAccessor>;
+                       ~~~~~~~~~~~~~~~
+../../../node_modules/@ng-bootstrap/ng-bootstrap/datepicker/datepicker.d.ts:14:25 - error TS2307: Cannot find module '@angular/core'.
+
+14     useExisting: import("@angular/core").Type<any>;
+                           ~~~~~~~~~~~~~~~
+../../../node_modules/@ng-bootstrap/ng-bootstrap/dropdown/dropdown.d.ts:1:135 - error TS2307: Cannot find module '@angular/core'.
+
+1 import { ChangeDetectorRef, ElementRef, EventEmitter, NgZone, AfterContentInit, OnDestroy, QueryList, Renderer2, SimpleChanges } from '@angular/core';
+                                                                                                                                        ~~~~~~~~~~~~~~~
+../../../node_modules/@ng-bootstrap/ng-bootstrap/modal/modal-config.d.ts:1:26 - error TS2307: Cannot find module '@angular/core'.
+
+1 import { Injector } from '@angular/core';
+                           ~~~~~~~~~~~~~~~
+../../../node_modules/@ng-bootstrap/ng-bootstrap/modal/modal-ref.d.ts:1:30 - error TS2307: Cannot find module '@angular/core'.
+
+1 import { ComponentRef } from '@angular/core';
+                               ~~~~~~~~~~~~~~~
+../../../node_modules/@ng-bootstrap/ng-bootstrap/modal/modal-stack.d.ts:1:94 - error TS2307: Cannot find module '@angular/core'.
+
+1 import { ApplicationRef, ComponentFactoryResolver, Injector, NgZone, RendererFactory2 } from '@angular/core';
+                                                                                               ~~~~~~~~~~~~~~~
+../../../node_modules/@ng-bootstrap/ng-bootstrap/modal/modal-window.d.ts:1:84 - error TS2307: Cannot find module '@angular/core'.
+
+1 import { AfterViewInit, ElementRef, EventEmitter, NgZone, OnDestroy, OnInit } from '@angular/core';
+                                                                                     ~~~~~~~~~~~~~~~
+../../../node_modules/@ng-bootstrap/ng-bootstrap/modal/modal.d.ts:1:52 - error TS2307: Cannot find module '@angular/core'.
+
+1 import { Injector, ComponentFactoryResolver } from '@angular/core';
+                                                     ~~~~~~~~~~~~~~~
+../../../node_modules/@ng-bootstrap/ng-bootstrap/nav/nav.d.ts:1:132 - error TS2307: Cannot find module '@angular/core'.
+
+1 import { AfterContentChecked, AfterContentInit, ChangeDetectorRef, ElementRef, EventEmitter, OnInit, QueryList, TemplateRef } from '@angular/core';
+                                                                                                                                     ~~~~~~~~~~~~~~~
+../../../node_modules/@ng-bootstrap/ng-bootstrap/pagination/pagination.d.ts:1:69 - error TS2307: Cannot find module '@angular/core'.
+
+1 import { EventEmitter, OnChanges, SimpleChanges, TemplateRef } from '@angular/core';
+                                                                      ~~~~~~~~~~~~~~~
+../../../node_modules/@ng-bootstrap/ng-bootstrap/popover/popover.d.ts:1:208 - error TS2307: Cannot find module '@angular/core'.
+
+1 import { EventEmitter, OnInit, OnDestroy, OnChanges, Injector, Renderer2, ElementRef, TemplateRef, ViewContainerRef, ComponentFactoryResolver, NgZone, SimpleChanges, ChangeDetectorRef, ApplicationRef } from '@angular/core';
+                                                                                                                                                                                                                 ~~~~~~~~~~~~~~~
+ (bb5e2f96)
+2020-11-02T16:57:59.6507784+01:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2020-11-02T16:57:59.6643285+01:00  [INF] Hosting environment: "Development" (c3307c92)
+2020-11-02T16:57:59.6666330+01:00  [INF] Content root path: "C:\Users\Mahmo\Documents\Mappe3Webapp\mappe3\mappe3" (b5d60022)
+2020-11-02T16:58:08.5247595+01:00  [ERR] ERROR in app/fetch-data/fetch-data.component.ts:19:1 - error TS1068: Unexpected token. A constructor, method, accessor, or property was expected.
+
+19 class Questions {
+   ~~~~~
+
+ (0c1d02ae)
+2020-11-02T16:59:22.2745239+01:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2020-11-02T16:59:22.2857901+01:00  [INF] Hosting environment: "Development" (c3307c92)
+2020-11-02T16:59:22.2883519+01:00  [INF] Content root path: "C:\Users\Mahmo\Documents\Mappe3Webapp\mappe3\mappe3" (b5d60022)
+2020-11-02T16:59:31.3748354+01:00  [ERR] ERROR in app/fetch-data/fetch-data.component.ts:19:1 - error TS1005: '}' expected.
+
+19 
+   
+
+ (496772fa)
+2020-11-02T17:01:03.0022519+01:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2020-11-02T17:01:03.0148480+01:00  [INF] Hosting environment: "Development" (c3307c92)
+2020-11-02T17:01:03.0169528+01:00  [INF] Content root path: "C:\Users\Mahmo\Documents\Mappe3Webapp\mappe3\mappe3" (b5d60022)
+2020-11-02T17:03:58.8027893+01:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2020-11-02T17:03:58.8150291+01:00  [INF] Hosting environment: "Development" (c3307c92)
+2020-11-02T17:03:58.8169821+01:00  [INF] Content root path: "C:\Users\Mahmo\Documents\Mappe3Webapp\mappe3\mappe3" (b5d60022)
+2020-11-02T17:06:29.4956925+01:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2020-11-02T17:06:29.5074641+01:00  [INF] Hosting environment: "Development" (c3307c92)
+2020-11-02T17:06:29.5095324+01:00  [INF] Content root path: "C:\Users\Mahmo\Documents\Mappe3Webapp\mappe3\mappe3" (b5d60022)
+2020-11-02T17:10:38.1286678+01:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2020-11-02T17:10:38.1424336+01:00  [INF] Hosting environment: "Development" (c3307c92)
+2020-11-02T17:10:38.1493064+01:00  [INF] Content root path: "C:\Users\Mahmo\Documents\Mappe3Webapp\mappe3\mappe3" (b5d60022)
+2020-11-02T17:10:52.1445464+01:00  [ERR] ERROR in app/app.module.ts:19:5 - error TS2304: Cannot find name 'FetchDataComponent'.
+
+19     FetchDataComponent
+       ~~~~~~~~~~~~~~~~~~
+app/app.module.ts:28:40 - error TS2304: Cannot find name 'FetchDataComponent'.
+
+28       { path: 'fetch-data', component: FetchDataComponent },
+                                          ~~~~~~~~~~~~~~~~~~
+
+ (92824b8c)
+2020-11-02T17:11:41.0311484+01:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2020-11-02T17:11:41.0435457+01:00  [INF] Hosting environment: "Development" (c3307c92)
+2020-11-02T17:11:41.0457053+01:00  [INF] Content root path: "C:\Users\Mahmo\Documents\Mappe3Webapp\mappe3\mappe3" (b5d60022)
+2020-11-02T17:11:56.6774912+01:00  [ERR] ERROR in ./src/app/faq-liste/faq-liste.component.ts
+Module not found: Error: Can't resolve './fetch-data.component.html' in 'C:\Users\Mahmo\Documents\Mappe3Webapp\mappe3\mappe3\ClientApp\src\app\faq-liste'
+ (0694441f)
+2020-11-02T17:12:09.8089270+01:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2020-11-02T17:12:09.8230067+01:00  [INF] Hosting environment: "Development" (c3307c92)
+2020-11-02T17:12:09.8256430+01:00  [INF] Content root path: "C:\Users\Mahmo\Documents\Mappe3Webapp\mappe3\mappe3" (b5d60022)
+2020-11-02T17:13:56.5466905+01:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2020-11-02T17:13:56.5579973+01:00  [INF] Hosting environment: "Development" (c3307c92)
+2020-11-02T17:13:56.5602371+01:00  [INF] Content root path: "C:\Users\Mahmo\Documents\Mappe3Webapp\mappe3\mappe3" (b5d60022)
+2020-11-02T17:32:06.8582640+01:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2020-11-02T17:32:06.8702259+01:00  [INF] Hosting environment: "Development" (c3307c92)
+2020-11-02T17:32:06.8724923+01:00  [INF] Content root path: "C:\Users\Mahmo\Documents\Mappe3Webapp\mappe3\mappe3" (b5d60022)
+2020-11-02T17:52:47.5254922+01:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2020-11-02T17:52:47.5416576+01:00  [INF] Hosting environment: "Development" (c3307c92)
+2020-11-02T17:52:47.5439041+01:00  [INF] Content root path: "C:\Users\Mahmo\Documents\Mappe3Webapp\mappe3\mappe3" (b5d60022)
+2020-11-02T17:58:43.6155306+01:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2020-11-02T17:58:43.6325523+01:00  [INF] Hosting environment: "Development" (c3307c92)
+2020-11-02T17:58:43.6351450+01:00  [INF] Content root path: "C:\Users\Mahmo\Documents\Mappe3Webapp\mappe3\mappe3" (b5d60022)
+2020-11-02T18:06:58.2226383+01:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2020-11-02T18:06:58.2370050+01:00  [INF] Hosting environment: "Development" (c3307c92)
+2020-11-02T18:06:58.2392128+01:00  [INF] Content root path: "C:\Users\Mahmo\Documents\Mappe3Webapp\mappe3\mappe3" (b5d60022)
+2020-11-02T18:19:39.6057469+01:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2020-11-02T18:19:39.6412967+01:00  [INF] Hosting environment: "Development" (c3307c92)
+2020-11-02T18:19:39.6727209+01:00  [INF] Content root path: "C:\Users\Mahmo\Documents\Mappe3Webapp\mappe3\mappe3" (b5d60022)
+2020-11-02T18:36:34.2126186+01:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2020-11-02T18:36:34.2272888+01:00  [INF] Hosting environment: "Development" (c3307c92)
+2020-11-02T18:36:34.2292018+01:00  [INF] Content root path: "C:\Users\Mahmo\Documents\Mappe3Webapp\mappe3\mappe3" (b5d60022)
+2020-11-02T18:48:13.5297719+01:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2020-11-02T18:48:13.5563283+01:00  [INF] Hosting environment: "Development" (c3307c92)
+2020-11-02T18:48:13.5606530+01:00  [INF] Content root path: "C:\Users\Mahmo\Documents\Mappe3Webapp\mappe3\mappe3" (b5d60022)
+2020-11-02T18:54:18.1253521+01:00  [ERR] ERROR in C:/Users/Mahmo/Documents/Mappe3Webapp/mappe3/node_modules/@fortawesome/angular-fontawesome/fesm2015/angular-fontawesome.js
+Module not found: Error: Can't resolve '@angular/core' in 'C:\Users\Mahmo\Documents\Mappe3Webapp\mappe3\node_modules\@fortawesome\angular-fontawesome\fesm2015'
+ERROR in C:/Users/Mahmo/Documents/Mappe3Webapp/mappe3/node_modules/@fortawesome/angular-fontawesome/fesm2015/angular-fontawesome.js
+Module not found: Error: Can't resolve '@angular/platform-browser' in 'C:\Users\Mahmo\Documents\Mappe3Webapp\mappe3\node_modules\@fortawesome\angular-fontawesome\fesm2015'
+ (455d18da)
+2020-11-02T18:54:22.4805252+01:00  [ERR]     ERROR in ../../node_modules/@fortawesome/angular-fontawesome/icon/icon.component.d.ts(1,42): error TS2307: Cannot find module '@angular/core'.
+    ../../node_modules/@fortawesome/angular-fontawesome/icon/icon.component.d.ts(2,40): error TS2307: Cannot find module '@angular/platform-browser'.
+    ../../node_modules/@fortawesome/angular-fontawesome/layers/layers-counter.component.d.ts(1,42): error TS2307: Cannot find module '@angular/core'.
+    ../../node_modules/@fortawesome/angular-fontawesome/layers/layers-counter.component.d.ts(2,40): error TS2307: Cannot find module '@angular/platform-browser'.
+    ../../node_modules/@fortawesome/angular-fontawesome/layers/layers-text.component.d.ts(1,42): error TS2307: Cannot find module '@angular/core'.
+    ../../node_modules/@fortawesome/angular-fontawesome/layers/layers-text.component.d.ts(2,40): error TS2307: Cannot find module '@angular/platform-browser'.
+    ../../node_modules/@fortawesome/angular-fontawesome/layers/layers.component.d.ts(1,73): error TS2307: Cannot find module '@angular/core'.
+    ../../node_modules/@fortawesome/angular-fontawesome/stack/stack-item-size.directive.d.ts(1,42): error TS2307: Cannot find module '@angular/core'.
+    ../../node_modules/@fortawesome/angular-fontawesome/stack/stack.component.d.ts(1,73): error TS2307: Cannot find module '@angular/core'.
+    
+ (e317e6f0)
+2020-11-02T18:55:25.7615046+01:00  [ERR] ERROR in C:/Users/Mahmo/Documents/Mappe3Webapp/mappe3/node_modules/@fortawesome/angular-fontawesome/fesm2015/angular-fontawesome.js
+Module not found: Error: Can't resolve '@angular/core' in 'C:\Users\Mahmo\Documents\Mappe3Webapp\mappe3\node_modules\@fortawesome\angular-fontawesome\fesm2015'
+ERROR in C:/Users/Mahmo/Documents/Mappe3Webapp/mappe3/node_modules/@fortawesome/angular-fontawesome/fesm2015/angular-fontawesome.js
+Module not found: Error: Can't resolve '@angular/platform-browser' in 'C:\Users\Mahmo\Documents\Mappe3Webapp\mappe3\node_modules\@fortawesome\angular-fontawesome\fesm2015'
+ (455d18da)
+2020-11-02T18:55:26.8333005+01:00  [ERR]     ERROR in ../../node_modules/@fortawesome/angular-fontawesome/icon/icon.component.d.ts(1,42): error TS2307: Cannot find module '@angular/core'.
+    ../../node_modules/@fortawesome/angular-fontawesome/icon/icon.component.d.ts(2,40): error TS2307: Cannot find module '@angular/platform-browser'.
+    ../../node_modules/@fortawesome/angular-fontawesome/layers/layers-counter.component.d.ts(1,42): error TS2307: Cannot find module '@angular/core'.
+    ../../node_modules/@fortawesome/angular-fontawesome/layers/layers-counter.component.d.ts(2,40): error TS2307: Cannot find module '@angular/platform-browser'.
+    ../../node_modules/@fortawesome/angular-fontawesome/layers/layers-text.component.d.ts(1,42): error TS2307: Cannot find module '@angular/core'.
+    ../../node_modules/@fortawesome/angular-fontawesome/layers/layers-text.component.d.ts(2,40): error TS2307: Cannot find module '@angular/platform-browser'.
+    ../../node_modules/@fortawesome/angular-fontawesome/layers/layers.component.d.ts(1,73): error TS2307: Cannot find module '@angular/core'.
+    ../../node_modules/@fortawesome/angular-fontawesome/stack/stack-item-size.directive.d.ts(1,42): error TS2307: Cannot find module '@angular/core'.
+    ../../node_modules/@fortawesome/angular-fontawesome/stack/stack.component.d.ts(1,73): error TS2307: Cannot find module '@angular/core'.
+    
+ (e317e6f0)
+2020-11-02T18:59:28.1509862+01:00  [ERR] ERROR in C:/Users/Mahmo/Documents/Mappe3Webapp/mappe3/node_modules/@fortawesome/angular-fontawesome/fesm2015/angular-fontawesome.js
+Module not found: Error: Can't resolve '@angular/core' in 'C:\Users\Mahmo\Documents\Mappe3Webapp\mappe3\node_modules\@fortawesome\angular-fontawesome\fesm2015'
+ERROR in C:/Users/Mahmo/Documents/Mappe3Webapp/mappe3/node_modules/@fortawesome/angular-fontawesome/fesm2015/angular-fontawesome.js
+Module not found: Error: Can't resolve '@angular/platform-browser' in 'C:\Users\Mahmo\Documents\Mappe3Webapp\mappe3\node_modules\@fortawesome\angular-fontawesome\fesm2015'
+ (455d18da)
+2020-11-02T18:59:29.6717947+01:00  [ERR]     ERROR in ../../node_modules/@fortawesome/angular-fontawesome/icon/icon.component.d.ts(1,42): error TS2307: Cannot find module '@angular/core'.
+    ../../node_modules/@fortawesome/angular-fontawesome/icon/icon.component.d.ts(2,40): error TS2307: Cannot find module '@angular/platform-browser'.
+    ../../node_modules/@fortawesome/angular-fontawesome/layers/layers-counter.component.d.ts(1,42): error TS2307: Cannot find module '@angular/core'.
+    ../../node_modules/@fortawesome/angular-fontawesome/layers/layers-counter.component.d.ts(2,40): error TS2307: Cannot find module '@angular/platform-browser'.
+    ../../node_modules/@fortawesome/angular-fontawesome/layers/layers-text.component.d.ts(1,42): error TS2307: Cannot find module '@angular/core'.
+    ../../node_modules/@fortawesome/angular-fontawesome/layers/layers-text.component.d.ts(2,40): error TS2307: Cannot find module '@angular/platform-browser'.
+    ../../node_modules/@fortawesome/angular-fontawesome/layers/layers.component.d.ts(1,73): error TS2307: Cannot find module '@angular/core'.
+    ../../node_modules/@fortawesome/angular-fontawesome/stack/stack-item-size.directive.d.ts(1,42): error TS2307: Cannot find module '@angular/core'.
+    ../../node_modules/@fortawesome/angular-fontawesome/stack/stack.component.d.ts(1,73): error TS2307: Cannot find module '@angular/core'.
+    
+ (e317e6f0)
+2020-11-02T18:59:42.3322322+01:00  [ERR] ERROR in C:/Users/Mahmo/Documents/Mappe3Webapp/mappe3/node_modules/@fortawesome/angular-fontawesome/fesm2015/angular-fontawesome.js
+Module not found: Error: Can't resolve '@angular/core' in 'C:\Users\Mahmo\Documents\Mappe3Webapp\mappe3\node_modules\@fortawesome\angular-fontawesome\fesm2015'
+ERROR in C:/Users/Mahmo/Documents/Mappe3Webapp/mappe3/node_modules/@fortawesome/angular-fontawesome/fesm2015/angular-fontawesome.js
+Module not found: Error: Can't resolve '@angular/platform-browser' in 'C:\Users\Mahmo\Documents\Mappe3Webapp\mappe3\node_modules\@fortawesome\angular-fontawesome\fesm2015'
+ (455d18da)
+2020-11-02T18:59:42.5928833+01:00  [ERR]     ERROR in ../../node_modules/@fortawesome/angular-fontawesome/icon/icon.component.d.ts(1,42): error TS2307: Cannot find module '@angular/core'.
+    ../../node_modules/@fortawesome/angular-fontawesome/icon/icon.component.d.ts(2,40): error TS2307: Cannot find module '@angular/platform-browser'.
+    ../../node_modules/@fortawesome/angular-fontawesome/layers/layers-counter.component.d.ts(1,42): error TS2307: Cannot find module '@angular/core'.
+    ../../node_modules/@fortawesome/angular-fontawesome/layers/layers-counter.component.d.ts(2,40): error TS2307: Cannot find module '@angular/platform-browser'.
+    ../../node_modules/@fortawesome/angular-fontawesome/layers/layers-text.component.d.ts(1,42): error TS2307: Cannot find module '@angular/core'.
+    ../../node_modules/@fortawesome/angular-fontawesome/layers/layers-text.component.d.ts(2,40): error TS2307: Cannot find module '@angular/platform-browser'.
+    ../../node_modules/@fortawesome/angular-fontawesome/layers/layers.component.d.ts(1,73): error TS2307: Cannot find module '@angular/core'.
+    ../../node_modules/@fortawesome/angular-fontawesome/stack/stack-item-size.directive.d.ts(1,42): error TS2307: Cannot find module '@angular/core'.
+    ../../node_modules/@fortawesome/angular-fontawesome/stack/stack.component.d.ts(1,73): error TS2307: Cannot find module '@angular/core'.
+    
+ (e317e6f0)
+2020-11-02T19:01:31.9970958+01:00  [ERR] ERROR in C:/Users/Mahmo/Documents/Mappe3Webapp/mappe3/node_modules/@fortawesome/angular-fontawesome/fesm2015/angular-fontawesome.js
+Module not found: Error: Can't resolve '@angular/core' in 'C:\Users\Mahmo\Documents\Mappe3Webapp\mappe3\node_modules\@fortawesome\angular-fontawesome\fesm2015'
+ERROR in C:/Users/Mahmo/Documents/Mappe3Webapp/mappe3/node_modules/@fortawesome/angular-fontawesome/fesm2015/angular-fontawesome.js
+Module not found: Error: Can't resolve '@angular/platform-browser' in 'C:\Users\Mahmo\Documents\Mappe3Webapp\mappe3\node_modules\@fortawesome\angular-fontawesome\fesm2015'
+ (455d18da)
+2020-11-02T19:01:32.5060379+01:00  [ERR] ERROR in C:/Users/Mahmo/Documents/Mappe3Webapp/mappe3/node_modules/@fortawesome/angular-fontawesome/fesm2015/angular-fontawesome.js
+Module not found: Error: Can't resolve '@angular/core' in 'C:\Users\Mahmo\Documents\Mappe3Webapp\mappe3\node_modules\@fortawesome\angular-fontawesome\fesm2015'
+ERROR in C:/Users/Mahmo/Documents/Mappe3Webapp/mappe3/node_modules/@fortawesome/angular-fontawesome/fesm2015/angular-fontawesome.js
+Module not found: Error: Can't resolve '@angular/platform-browser' in 'C:\Users\Mahmo\Documents\Mappe3Webapp\mappe3\node_modules\@fortawesome\angular-fontawesome\fesm2015'
+ (455d18da)
+2020-11-02T19:01:33.2761802+01:00  [ERR]     ERROR in ../../node_modules/@fortawesome/angular-fontawesome/icon/icon.component.d.ts(1,42): error TS2307: Cannot find module '@angular/core'.
+    ../../node_modules/@fortawesome/angular-fontawesome/icon/icon.component.d.ts(2,40): error TS2307: Cannot find module '@angular/platform-browser'.
+    ../../node_modules/@fortawesome/angular-fontawesome/layers/layers-counter.component.d.ts(1,42): error TS2307: Cannot find module '@angular/core'.
+    ../../node_modules/@fortawesome/angular-fontawesome/layers/layers-counter.component.d.ts(2,40): error TS2307: Cannot find module '@angular/platform-browser'.
+    ../../node_modules/@fortawesome/angular-fontawesome/layers/layers-text.component.d.ts(1,42): error TS2307: Cannot find module '@angular/core'.
+    ../../node_modules/@fortawesome/angular-fontawesome/layers/layers-text.component.d.ts(2,40): error TS2307: Cannot find module '@angular/platform-browser'.
+    ../../node_modules/@fortawesome/angular-fontawesome/layers/layers.component.d.ts(1,73): error TS2307: Cannot find module '@angular/core'.
+    ../../node_modules/@fortawesome/angular-fontawesome/stack/stack-item-size.directive.d.ts(1,42): error TS2307: Cannot find module '@angular/core'.
+    ../../node_modules/@fortawesome/angular-fontawesome/stack/stack.component.d.ts(1,73): error TS2307: Cannot find module '@angular/core'.
+    
+ (e317e6f0)
+2020-11-02T19:01:34.5186856+01:00  [ERR]     ERROR in ../../node_modules/@fortawesome/angular-fontawesome/icon/icon.component.d.ts(1,42): error TS2307: Cannot find module '@angular/core'.
+    ../../node_modules/@fortawesome/angular-fontawesome/icon/icon.component.d.ts(2,40): error TS2307: Cannot find module '@angular/platform-browser'.
+    ../../node_modules/@fortawesome/angular-fontawesome/layers/layers-counter.component.d.ts(1,42): error TS2307: Cannot find module '@angular/core'.
+    ../../node_modules/@fortawesome/angular-fontawesome/layers/layers-counter.component.d.ts(2,40): error TS2307: Cannot find module '@angular/platform-browser'.
+    ../../node_modules/@fortawesome/angular-fontawesome/layers/layers-text.component.d.ts(1,42): error TS2307: Cannot find module '@angular/core'.
+    ../../node_modules/@fortawesome/angular-fontawesome/layers/layers-text.component.d.ts(2,40): error TS2307: Cannot find module '@angular/platform-browser'.
+    ../../node_modules/@fortawesome/angular-fontawesome/layers/layers.component.d.ts(1,73): error TS2307: Cannot find module '@angular/core'.
+    ../../node_modules/@fortawesome/angular-fontawesome/stack/stack-item-size.directive.d.ts(1,42): error TS2307: Cannot find module '@angular/core'.
+    ../../node_modules/@fortawesome/angular-fontawesome/stack/stack.component.d.ts(1,73): error TS2307: Cannot find module '@angular/core'.
+    
+ (e317e6f0)
+2020-11-02T19:21:24.1551461+01:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2020-11-02T19:21:24.1665246+01:00  [INF] Hosting environment: "Development" (c3307c92)
+2020-11-02T19:21:24.1686474+01:00  [INF] Content root path: "C:\Users\Mahmo\Documents\Mappe3Webapp\mappe3\mappe3" (b5d60022)
+2020-11-02T19:34:02.5081038+01:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2020-11-02T19:34:02.5215522+01:00  [INF] Hosting environment: "Development" (c3307c92)
+2020-11-02T19:34:02.5235827+01:00  [INF] Content root path: "C:\Users\Mahmo\Documents\Mappe3Webapp\mappe3\mappe3" (b5d60022)
+2020-11-02T20:02:14.5469653+01:00  [ERR] ERROR in C:/Users/Mahmo/Documents/Mappe3Webapp/mappe3/node_modules/angular-font-awesome/dist/angular-font-awesome.js
+Module not found: Error: Can't resolve '@angular/core' in 'C:\Users\Mahmo\Documents\Mappe3Webapp\mappe3\node_modules\angular-font-awesome\dist'
+ (0ad584f1)
+2020-11-02T20:02:14.5600433+01:00  [ERR]     ERROR in ../../node_modules/angular-font-awesome/dist/src/component/angular-font-awesome.component.d.ts(1,24): error TS2307: Cannot find module '@angular/core'.
+    
+ (b3fc4dfd)
+2020-11-02T20:02:14.9925831+01:00  [ERR] ERROR in C:/Users/Mahmo/Documents/Mappe3Webapp/mappe3/node_modules/angular-font-awesome/dist/angular-font-awesome.js
+Module not found: Error: Can't resolve '@angular/core' in 'C:\Users\Mahmo\Documents\Mappe3Webapp\mappe3\node_modules\angular-font-awesome\dist'
+ (0ad584f1)
+2020-11-02T20:02:15.5482760+01:00  [ERR]     ERROR in ../../node_modules/angular-font-awesome/dist/src/component/angular-font-awesome.component.d.ts(1,24): error TS2307: Cannot find module '@angular/core'.
+    
+ (b3fc4dfd)
+2020-11-02T20:04:28.5725416+01:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2020-11-02T20:04:28.5894345+01:00  [INF] Hosting environment: "Development" (c3307c92)
+2020-11-02T20:04:28.5923863+01:00  [INF] Content root path: "C:\Users\Mahmo\Documents\Mappe3Webapp\mappe3\mappe3" (b5d60022)
+2020-11-02T20:04:46.0774831+01:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2020-11-02T20:04:46.0924935+01:00  [INF] Hosting environment: "Development" (c3307c92)
+2020-11-02T20:04:46.0966183+01:00  [INF] Content root path: "C:\Users\Mahmo\Documents\Mappe3Webapp\mappe3\mappe3" (b5d60022)
+2020-11-02T20:04:55.8316505+01:00  [ERR] ERROR in app/app.module.ts:27:5 - error TS1005: ',' expected.
+
+27     AppRoutingModule,
+       ~~~~~~~~~~~~~~~~
+
+ (6ee43a20)
+2020-11-02T20:06:10.0885729+01:00  [ERR] ERROR in app/app.module.ts:27:5 - error TS1005: ',' expected.
+
+27     AppRoutingModule,
+       ~~~~~~~~~~~~~~~~
+
+ (6ee43a20)
+2020-11-02T20:06:23.3067792+01:00  [ERR] ERROR in ./src/app/app.module.ts
+Module not found: Error: Can't resolve 'angular-font-awesome' in 'C:\Users\Mahmo\Documents\Mappe3Webapp\mappe3\mappe3\ClientApp\src\app'
+ (54f97e3f)
+2020-11-02T20:06:34.6314733+01:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2020-11-02T20:06:34.6499322+01:00  [INF] Hosting environment: "Development" (c3307c92)
+2020-11-02T20:06:34.6558391+01:00  [INF] Content root path: "C:\Users\Mahmo\Documents\Mappe3Webapp\mappe3\mappe3" (b5d60022)
+2020-11-02T20:34:53.0018562+01:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2020-11-02T20:34:53.0165865+01:00  [INF] Hosting environment: "Development" (c3307c92)
+2020-11-02T20:34:53.0187488+01:00  [INF] Content root path: "C:\Users\Mahmo\Documents\Mappe3Webapp\mappe3\mappe3" (b5d60022)
+2020-11-02T21:18:12.0135228+01:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2020-11-02T21:18:12.0260450+01:00  [INF] Hosting environment: "Development" (c3307c92)
+2020-11-02T21:18:12.0282927+01:00  [INF] Content root path: "C:\Users\Mahmo\Documents\Mappe3Webapp\mappe3\mappe3" (b5d60022)
+2020-11-02T21:56:22.3757993+01:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2020-11-02T21:56:22.3876785+01:00  [INF] Hosting environment: "Development" (c3307c92)
+2020-11-02T21:56:22.3897276+01:00  [INF] Content root path: "C:\Users\Mahmo\Documents\Mappe3Webapp\mappe3\mappe3" (b5d60022)
+2020-11-02T21:56:37.2507911+01:00  [ERR] ERROR in app/Questions.ts:1:25 - error TS2307: Cannot find module './Answers'.
+
+1 import { Answers } from "./Answers";
+                          ~~~~~~~~~~~
+
+ (166afe8b)
+2020-11-02T21:58:31.6740059+01:00 80000052-0005-fe00-b63f-84710c7967bb [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.Net.WebSockets.WebSocketException (0x80004005): The WebSocket is in an invalid state ('Aborted') for this operation. Valid states are: 'Open, CloseReceived'
+   at System.Net.WebSockets.WebSocketValidate.ThrowIfInvalidState(WebSocketState currentState, Boolean isDisposed, WebSocketState[] validStates)
+   at System.Net.WebSockets.ManagedWebSocket.CloseOutputAsyncCore(WebSocketCloseStatus closeStatus, String statusDescription, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.SpaServices.Extensions.Proxy.SpaProxy.PumpWebSocket(WebSocket source, WebSocket destination, Int32 bufferSize, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.SpaServices.Extensions.Proxy.SpaProxy.AcceptProxyWebSocketRequest(HttpContext context, Uri destinationUri, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.SpaServices.Extensions.Proxy.SpaProxy.PerformProxyRequest(HttpContext context, HttpClient httpClient, Task`1 baseUriTask, CancellationToken applicationStoppingToken, Boolean proxy404s)
+   at Microsoft.AspNetCore.Builder.SpaProxyingExtensions.<>c__DisplayClass2_0.<<UseProxyToSpaDevelopmentServer>b__0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-11-02T21:58:31.6789756+01:00 80000052-0005-fe00-b63f-84710c7967bb [WRN] The response has already started, the error page middleware will not be executed. (e1dd4c0d)
+2020-11-02T21:58:31.7061936+01:00 80000052-0005-fe00-b63f-84710c7967bb [ERR] Connection ID ""18302628908719145041"", Request ID ""80000052-0005-fe00-b63f-84710c7967bb"": An unhandled exception was thrown by the application. (bf316047)
+System.Net.WebSockets.WebSocketException (0x80004005): The WebSocket is in an invalid state ('Aborted') for this operation. Valid states are: 'Open, CloseReceived'
+   at System.Net.WebSockets.WebSocketValidate.ThrowIfInvalidState(WebSocketState currentState, Boolean isDisposed, WebSocketState[] validStates)
+   at System.Net.WebSockets.ManagedWebSocket.CloseOutputAsyncCore(WebSocketCloseStatus closeStatus, String statusDescription, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.SpaServices.Extensions.Proxy.SpaProxy.PumpWebSocket(WebSocket source, WebSocket destination, Int32 bufferSize, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.SpaServices.Extensions.Proxy.SpaProxy.AcceptProxyWebSocketRequest(HttpContext context, Uri destinationUri, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.SpaServices.Extensions.Proxy.SpaProxy.PerformProxyRequest(HttpContext context, HttpClient httpClient, Task`1 baseUriTask, CancellationToken applicationStoppingToken, Boolean proxy404s)
+   at Microsoft.AspNetCore.Builder.SpaProxyingExtensions.<>c__DisplayClass2_0.<<UseProxyToSpaDevelopmentServer>b__0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContextOfT`1.ProcessRequestAsync()
+2020-11-02T22:02:27.0177628+01:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2020-11-02T22:02:27.0285657+01:00  [INF] Hosting environment: "Development" (c3307c92)
+2020-11-02T22:02:27.0307667+01:00  [INF] Content root path: "C:\Users\Mahmo\Documents\Mappe3Webapp\mappe3\mappe3" (b5d60022)
+2020-11-02T22:06:48.0017540+01:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2020-11-02T22:06:48.0147665+01:00  [INF] Hosting environment: "Development" (c3307c92)
+2020-11-02T22:06:48.0167171+01:00  [INF] Content root path: "C:\Users\Mahmo\Documents\Mappe3Webapp\mappe3\mappe3" (b5d60022)
+2020-11-02T22:16:08.3614131+01:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2020-11-02T22:16:08.3736197+01:00  [INF] Hosting environment: "Development" (c3307c92)
+2020-11-02T22:16:08.3759962+01:00  [INF] Content root path: "C:\Users\Mahmo\Documents\Mappe3Webapp\mappe3\mappe3" (b5d60022)
+2020-11-02T23:51:57.4863739+01:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2020-11-02T23:51:57.4979323+01:00  [INF] Hosting environment: "Development" (c3307c92)
+2020-11-02T23:51:57.5000552+01:00  [INF] Content root path: "C:\Users\Mahmo\Documents\Mappe3Webapp\mappe3\mappe3" (b5d60022)

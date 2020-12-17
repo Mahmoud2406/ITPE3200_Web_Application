@@ -1,0 +1,235 @@
+2020-11-03T00:20:10.5357069+01:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2020-11-03T00:20:10.5477222+01:00  [INF] Hosting environment: "Development" (c3307c92)
+2020-11-03T00:20:10.5499659+01:00  [INF] Content root path: "C:\Users\Mahmo\Documents\Mappe3Webapp\mappe3\mappe3" (b5d60022)
+2020-11-03T00:20:53.7888607+01:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2020-11-03T00:20:53.8016326+01:00  [INF] Hosting environment: "Development" (c3307c92)
+2020-11-03T00:20:53.8048191+01:00  [INF] Content root path: "C:\Users\Mahmo\Documents\Mappe3Webapp\mappe3\mappe3" (b5d60022)
+2020-11-03T00:22:03.6994237+01:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2020-11-03T00:22:03.7137962+01:00  [INF] Hosting environment: "Development" (c3307c92)
+2020-11-03T00:22:03.7158575+01:00  [INF] Content root path: "C:\Users\Mahmo\Documents\Mappe3Webapp\mappe3\mappe3" (b5d60022)
+2020-11-03T00:22:29.1475250+01:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2020-11-03T00:22:29.1590520+01:00  [INF] Hosting environment: "Development" (c3307c92)
+2020-11-03T00:22:29.1612004+01:00  [INF] Content root path: "C:\Users\Mahmo\Documents\Mappe3Webapp\mappe3\mappe3" (b5d60022)
+2020-11-03T00:23:55.0327511+01:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2020-11-03T00:23:55.0459117+01:00  [INF] Hosting environment: "Development" (c3307c92)
+2020-11-03T00:23:55.0481718+01:00  [INF] Content root path: "C:\Users\Mahmo\Documents\Mappe3Webapp\mappe3\mappe3" (b5d60022)
+2020-11-03T16:02:20.0364968+01:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2020-11-03T16:02:20.1781541+01:00  [INF] Hosting environment: "Development" (c3307c92)
+2020-11-03T16:02:20.1805625+01:00  [INF] Content root path: "C:\Users\Mahmo\Documents\Mappe3Webapp\mappe3\mappe3" (b5d60022)
+2020-11-03T16:06:37.0713082+01:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2020-11-03T16:06:37.0876735+01:00  [INF] Hosting environment: "Development" (c3307c92)
+2020-11-03T16:06:37.0907208+01:00  [INF] Content root path: "C:\Users\Mahmo\Documents\Mappe3Webapp\mappe3\mappe3" (b5d60022)
+2020-11-03T16:08:28.3357702+01:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2020-11-03T16:08:28.3477655+01:00  [INF] Hosting environment: "Development" (c3307c92)
+2020-11-03T16:08:28.3501679+01:00  [INF] Content root path: "C:\Users\Mahmo\Documents\Mappe3Webapp\mappe3\mappe3" (b5d60022)
+2020-11-03T16:31:04.7317452+01:00  [ERR]     ERROR in src/app/Questions.ts(6,11): error TS2304: Cannot find name 'Ratings'.
+    
+ (c15af4bb)
+2020-11-03T16:34:54.1097922+01:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2020-11-03T16:34:54.1246264+01:00  [INF] Hosting environment: "Development" (c3307c92)
+2020-11-03T16:34:54.1270672+01:00  [INF] Content root path: "C:\Users\Mahmo\Documents\Mappe3Webapp\mappe3\mappe3" (b5d60022)
+2020-11-03T17:06:14.6195291+01:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2020-11-03T17:06:14.6386884+01:00  [INF] Hosting environment: "Development" (c3307c92)
+2020-11-03T17:06:14.6409671+01:00  [INF] Content root path: "C:\Users\Mahmo\Documents\Mappe3Webapp\mappe3\mappe3" (b5d60022)
+2020-11-03T17:12:57.4532119+01:00 80000107-0007-fc00-b63f-84710c7967bb [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+Microsoft.AspNetCore.Routing.Matching.AmbiguousMatchException: The request matched multiple endpoints. Matches: 
+
+KundeApp2.Controllers.FaqController.FetchAllQuestions (mappe3)
+KundeApp2.Controllers.FaqController.FetchOneRating (mappe3)
+KundeApp2.Controllers.FaqController.UpdateRating (mappe3)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ReportAmbiguity(CandidateState[] candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ProcessFinalCandidates(HttpContext httpContext, CandidateState[] candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.Select(HttpContext httpContext, CandidateState[] candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcher.MatchAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-11-03T17:12:59.0309114+01:00 80000160-0006-fa00-b63f-84710c7967bb [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+Microsoft.AspNetCore.Routing.Matching.AmbiguousMatchException: The request matched multiple endpoints. Matches: 
+
+KundeApp2.Controllers.FaqController.FetchAllQuestions (mappe3)
+KundeApp2.Controllers.FaqController.FetchOneRating (mappe3)
+KundeApp2.Controllers.FaqController.UpdateRating (mappe3)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ReportAmbiguity(CandidateState[] candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ProcessFinalCandidates(HttpContext httpContext, CandidateState[] candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.Select(HttpContext httpContext, CandidateState[] candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcher.MatchAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-11-03T17:13:09.0624453+01:00 80000045-0004-fb00-b63f-84710c7967bb [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+Microsoft.AspNetCore.Routing.Matching.AmbiguousMatchException: The request matched multiple endpoints. Matches: 
+
+KundeApp2.Controllers.FaqController.FetchAllQuestions (mappe3)
+KundeApp2.Controllers.FaqController.FetchOneRating (mappe3)
+KundeApp2.Controllers.FaqController.UpdateRating (mappe3)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ReportAmbiguity(CandidateState[] candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ProcessFinalCandidates(HttpContext httpContext, CandidateState[] candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.Select(HttpContext httpContext, CandidateState[] candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcher.MatchAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-11-03T17:13:28.0925028+01:00 80000064-0002-f800-b63f-84710c7967bb [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+Microsoft.AspNetCore.Routing.Matching.AmbiguousMatchException: The request matched multiple endpoints. Matches: 
+
+KundeApp2.Controllers.FaqController.FetchAllQuestions (mappe3)
+KundeApp2.Controllers.FaqController.FetchOneRating (mappe3)
+KundeApp2.Controllers.FaqController.UpdateRating (mappe3)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ReportAmbiguity(CandidateState[] candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ProcessFinalCandidates(HttpContext httpContext, CandidateState[] candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.Select(HttpContext httpContext, CandidateState[] candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcher.MatchAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-11-03T17:13:30.7040559+01:00 800000c4-0002-f900-b63f-84710c7967bb [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+Microsoft.AspNetCore.Routing.Matching.AmbiguousMatchException: The request matched multiple endpoints. Matches: 
+
+KundeApp2.Controllers.FaqController.FetchAllQuestions (mappe3)
+KundeApp2.Controllers.FaqController.FetchOneRating (mappe3)
+KundeApp2.Controllers.FaqController.UpdateRating (mappe3)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ReportAmbiguity(CandidateState[] candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ProcessFinalCandidates(HttpContext httpContext, CandidateState[] candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.Select(HttpContext httpContext, CandidateState[] candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcher.MatchAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-11-03T17:16:16.7227326+01:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2020-11-03T17:16:16.7390771+01:00  [INF] Hosting environment: "Development" (c3307c92)
+2020-11-03T17:16:16.7413588+01:00  [INF] Content root path: "C:\Users\Mahmo\Documents\Mappe3Webapp\mappe3\mappe3" (b5d60022)
+2020-11-03T17:20:20.0244420+01:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2020-11-03T17:20:20.0401770+01:00  [INF] Hosting environment: "Development" (c3307c92)
+2020-11-03T17:20:20.0424394+01:00  [INF] Content root path: "C:\Users\Mahmo\Documents\Mappe3Webapp\mappe3\mappe3" (b5d60022)
+2020-11-03T17:24:09.3181586+01:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2020-11-03T17:24:09.3313591+01:00  [INF] Hosting environment: "Development" (c3307c92)
+2020-11-03T17:24:09.3345475+01:00  [INF] Content root path: "C:\Users\Mahmo\Documents\Mappe3Webapp\mappe3\mappe3" (b5d60022)
+2020-11-03T17:33:03.9666120+01:00  [ERR]     ERROR in src/app/liste/liste.ts(59,53): error TS2551: Property 'id' does not exist on type 'Ratings'. Did you mean 'Id'?
+    src/app/liste/liste.ts(59,66): error TS2551: Property 'id' does not exist on type 'Ratings'. Did you mean 'Id'?
+    
+ (8a88c803)
+2020-11-03T17:42:56.5075943+01:00  [ERR]     ERROR in src/app/liste/liste.ts(62,27): error TS2551: Property 'rating' does not exist on type 'Questions'. Did you mean 'Rating'?
+    
+ (8ffaa069)
+2020-11-03T17:53:43.5780989+01:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2020-11-03T17:53:43.6254635+01:00  [INF] Hosting environment: "Development" (c3307c92)
+2020-11-03T17:53:43.6677505+01:00  [INF] Content root path: "C:\Users\Mahmo\Documents\Mappe3Webapp\mappe3\mappe3" (b5d60022)
+2020-11-03T18:04:11.4049465+01:00 80000179-0005-fc00-b63f-84710c7967bb [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.Net.WebSockets.WebSocketException (0x80004005): The WebSocket is in an invalid state ('Aborted') for this operation. Valid states are: 'Open, CloseReceived'
+   at System.Net.WebSockets.WebSocketValidate.ThrowIfInvalidState(WebSocketState currentState, Boolean isDisposed, WebSocketState[] validStates)
+   at System.Net.WebSockets.ManagedWebSocket.CloseOutputAsyncCore(WebSocketCloseStatus closeStatus, String statusDescription, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.SpaServices.Extensions.Proxy.SpaProxy.PumpWebSocket(WebSocket source, WebSocket destination, Int32 bufferSize, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.SpaServices.Extensions.Proxy.SpaProxy.AcceptProxyWebSocketRequest(HttpContext context, Uri destinationUri, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.SpaServices.Extensions.Proxy.SpaProxy.PerformProxyRequest(HttpContext context, HttpClient httpClient, Task`1 baseUriTask, CancellationToken applicationStoppingToken, Boolean proxy404s)
+   at Microsoft.AspNetCore.Builder.SpaProxyingExtensions.<>c__DisplayClass2_0.<<UseProxyToSpaDevelopmentServer>b__0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+2020-11-03T18:04:11.4093014+01:00 80000179-0005-fc00-b63f-84710c7967bb [WRN] The response has already started, the error page middleware will not be executed. (e1dd4c0d)
+2020-11-03T18:04:11.4400277+01:00 80000179-0005-fc00-b63f-84710c7967bb [ERR] Connection ID ""18158513720643289464"", Request ID ""80000179-0005-fc00-b63f-84710c7967bb"": An unhandled exception was thrown by the application. (bf316047)
+System.Net.WebSockets.WebSocketException (0x80004005): The WebSocket is in an invalid state ('Aborted') for this operation. Valid states are: 'Open, CloseReceived'
+   at System.Net.WebSockets.WebSocketValidate.ThrowIfInvalidState(WebSocketState currentState, Boolean isDisposed, WebSocketState[] validStates)
+   at System.Net.WebSockets.ManagedWebSocket.CloseOutputAsyncCore(WebSocketCloseStatus closeStatus, String statusDescription, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.SpaServices.Extensions.Proxy.SpaProxy.PumpWebSocket(WebSocket source, WebSocket destination, Int32 bufferSize, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.SpaServices.Extensions.Proxy.SpaProxy.AcceptProxyWebSocketRequest(HttpContext context, Uri destinationUri, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.SpaServices.Extensions.Proxy.SpaProxy.PerformProxyRequest(HttpContext context, HttpClient httpClient, Task`1 baseUriTask, CancellationToken applicationStoppingToken, Boolean proxy404s)
+   at Microsoft.AspNetCore.Builder.SpaProxyingExtensions.<>c__DisplayClass2_0.<<UseProxyToSpaDevelopmentServer>b__0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContextOfT`1.ProcessRequestAsync()
+2020-11-03T18:11:25.9764767+01:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2020-11-03T18:11:25.9893618+01:00  [INF] Hosting environment: "Development" (c3307c92)
+2020-11-03T18:11:25.9911916+01:00  [INF] Content root path: "C:\Users\Mahmo\Documents\Mappe3Webapp\mappe3\mappe3" (b5d60022)
+2020-11-03T18:15:30.3178549+01:00  [ERR] ERROR in app/liste/liste.ts:71:1 - error TS1128: Declaration or statement expected.
+
+71 }
+   ~
+
+ (cb44f37e)
+2020-11-03T18:21:38.9224310+01:00  [ERR]     ERROR in src/app/liste/liste.ts(42,41): error TS2304: Cannot find name 'Item'.
+    
+ (93d4dc38)
+2020-11-03T21:00:33.5102262+01:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2020-11-03T21:00:33.5259007+01:00  [INF] Hosting environment: "Development" (c3307c92)
+2020-11-03T21:00:33.5281084+01:00  [INF] Content root path: "C:\Users\Mahmo\Documents\Mappe3Webapp\mappe3\mappe3" (b5d60022)
+2020-11-03T21:09:15.2738253+01:00  [ERR]     ERROR in src/app/liste/liste.ts(55,11): error TS2349: Cannot invoke an expression whose type lacks a call signature. Type 'Ratings' has no compatible call signatures.
+    
+ (ec53e6f8)
+2020-11-03T21:17:29.7327769+01:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2020-11-03T21:17:29.7486354+01:00  [INF] Hosting environment: "Development" (c3307c92)
+2020-11-03T21:17:29.7511718+01:00  [INF] Content root path: "C:\Users\Mahmo\Documents\Mappe3Webapp\mappe3\mappe3" (b5d60022)
+2020-11-03T21:19:59.3109865+01:00  [ERR]     ERROR in src/app/liste/liste.ts(55,45): error TS2551: Property 'rating' does not exist on type 'Questions'. Did you mean 'Rating'?
+    
+ (28e3a796)
+2020-11-03T21:40:45.0465657+01:00  [ERR]     ERROR in src/app/liste/liste.ts(47,14): error TS2551: Property 'Id' does not exist on type 'Ratings'. Did you mean 'id'?
+    src/app/liste/liste.ts(48,14): error TS2551: Property 'Rating' does not exist on type 'Ratings'. Did you mean 'rating'?
+    
+ (c5b49f03)
+2020-11-03T22:41:33.6323409+01:00  [ERR]     ERROR in src/app/liste/liste.ts(7,10): error TS2300: Duplicate identifier 'faLongArrowAltDown'.
+    src/app/liste/liste.ts(7,62): error TS2300: Duplicate identifier 'faLongArrowAltDown'.
+    
+ (4edeceba)
+2020-11-03T22:45:35.3448119+01:00 8000002c-0002-f500-b63f-84710c7967bb [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.Net.WebSockets.WebSocketException (0x80004005): The WebSocket is in an invalid state ('Aborted') for this operation. Valid states are: 'Open, CloseReceived'
+   at System.Net.WebSockets.WebSocketValidate.ThrowIfInvalidState(WebSocketState currentState, Boolean isDisposed, WebSocketState[] validStates)
+   at System.Net.WebSockets.ManagedWebSocket.CloseOutputAsyncCore(WebSocketCloseStatus closeStatus, String statusDescription, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.SpaServices.Extensions.Proxy.SpaProxy.PumpWebSocket(WebSocket source, WebSocket destination, Int32 bufferSize, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.SpaServices.Extensions.Proxy.SpaProxy.AcceptProxyWebSocketRequest(HttpContext context, Uri destinationUri, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.SpaServices.Extensions.Proxy.SpaProxy.PerformProxyRequest(HttpContext context, HttpClient httpClient, Task`1 baseUriTask, CancellationToken applicationStoppingToken, Boolean proxy404s)
+   at Microsoft.AspNetCore.Builder.SpaProxyingExtensions.<>c__DisplayClass2_0.<<UseProxyToSpaDevelopmentServer>b__0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContextOfT`1.ProcessRequestAsync()
+2020-11-03T22:45:35.3787155+01:00 8000002c-0002-f500-b63f-84710c7967bb [WRN] The response has already started, the error page middleware will not be executed. (e1dd4c0d)
+2020-11-03T22:45:35.4281109+01:00 8000002c-0002-f500-b63f-84710c7967bb [ERR] Connection ID ""17654110549492891691"", Request ID ""8000002c-0002-f500-b63f-84710c7967bb"": An unhandled exception was thrown by the application. (bf316047)
+System.Net.WebSockets.WebSocketException (0x80004005): The WebSocket is in an invalid state ('Aborted') for this operation. Valid states are: 'Open, CloseReceived'
+   at System.Net.WebSockets.WebSocketValidate.ThrowIfInvalidState(WebSocketState currentState, Boolean isDisposed, WebSocketState[] validStates)
+   at System.Net.WebSockets.ManagedWebSocket.CloseOutputAsyncCore(WebSocketCloseStatus closeStatus, String statusDescription, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.SpaServices.Extensions.Proxy.SpaProxy.PumpWebSocket(WebSocket source, WebSocket destination, Int32 bufferSize, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.SpaServices.Extensions.Proxy.SpaProxy.AcceptProxyWebSocketRequest(HttpContext context, Uri destinationUri, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.SpaServices.Extensions.Proxy.SpaProxy.PerformProxyRequest(HttpContext context, HttpClient httpClient, Task`1 baseUriTask, CancellationToken applicationStoppingToken, Boolean proxy404s)
+   at Microsoft.AspNetCore.Builder.SpaProxyingExtensions.<>c__DisplayClass2_0.<<UseProxyToSpaDevelopmentServer>b__0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContextOfT`1.ProcessRequestAsync()
+2020-11-03T22:56:32.4995144+01:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2020-11-03T22:56:32.5133599+01:00  [INF] Hosting environment: "Development" (c3307c92)
+2020-11-03T22:56:32.5158064+01:00  [INF] Content root path: "C:\Users\Mahmo\Documents\Mappe3Webapp\mappe3\mappe3" (b5d60022)
+2020-11-03T23:19:07.0843994+01:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2020-11-03T23:19:07.0968027+01:00  [INF] Hosting environment: "Development" (c3307c92)
+2020-11-03T23:19:07.1000781+01:00  [INF] Content root path: "C:\Users\Mahmo\Documents\Mappe3Webapp\mappe3\mappe3" (b5d60022)
+2020-11-03T23:33:19.9553824+01:00 80000272-0002-fb00-b63f-84710c7967bb [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.Net.WebSockets.WebSocketException (0x80004005): The WebSocket is in an invalid state ('Aborted') for this operation. Valid states are: 'Open, CloseReceived'
+   at System.Net.WebSockets.WebSocketValidate.ThrowIfInvalidState(WebSocketState currentState, Boolean isDisposed, WebSocketState[] validStates)
+   at System.Net.WebSockets.ManagedWebSocket.CloseOutputAsyncCore(WebSocketCloseStatus closeStatus, String statusDescription, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.SpaServices.Extensions.Proxy.SpaProxy.PumpWebSocket(WebSocket source, WebSocket destination, Int32 bufferSize, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.SpaServices.Extensions.Proxy.SpaProxy.AcceptProxyWebSocketRequest(HttpContext context, Uri destinationUri, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.SpaServices.Extensions.Proxy.SpaProxy.PerformProxyRequest(HttpContext context, HttpClient httpClient, Task`1 baseUriTask, CancellationToken applicationStoppingToken, Boolean proxy404s)
+   at Microsoft.AspNetCore.Builder.SpaProxyingExtensions.<>c__DisplayClass2_0.<<UseProxyToSpaDevelopmentServer>b__0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContextOfT`1.ProcessRequestAsync()
+2020-11-03T23:33:19.9601479+01:00 80000272-0002-fb00-b63f-84710c7967bb [WRN] The response has already started, the error page middleware will not be executed. (e1dd4c0d)
+2020-11-03T23:33:19.9865417+01:00 80000272-0002-fb00-b63f-84710c7967bb [ERR] Connection ID ""18086456113720459889"", Request ID ""80000272-0002-fb00-b63f-84710c7967bb"": An unhandled exception was thrown by the application. (bf316047)
+System.Net.WebSockets.WebSocketException (0x80004005): The WebSocket is in an invalid state ('Aborted') for this operation. Valid states are: 'Open, CloseReceived'
+   at System.Net.WebSockets.WebSocketValidate.ThrowIfInvalidState(WebSocketState currentState, Boolean isDisposed, WebSocketState[] validStates)
+   at System.Net.WebSockets.ManagedWebSocket.CloseOutputAsyncCore(WebSocketCloseStatus closeStatus, String statusDescription, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.SpaServices.Extensions.Proxy.SpaProxy.PumpWebSocket(WebSocket source, WebSocket destination, Int32 bufferSize, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.SpaServices.Extensions.Proxy.SpaProxy.AcceptProxyWebSocketRequest(HttpContext context, Uri destinationUri, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.SpaServices.Extensions.Proxy.SpaProxy.PerformProxyRequest(HttpContext context, HttpClient httpClient, Task`1 baseUriTask, CancellationToken applicationStoppingToken, Boolean proxy404s)
+   at Microsoft.AspNetCore.Builder.SpaProxyingExtensions.<>c__DisplayClass2_0.<<UseProxyToSpaDevelopmentServer>b__0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContextOfT`1.ProcessRequestAsync()

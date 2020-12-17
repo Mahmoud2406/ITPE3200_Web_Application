@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Billettkjøp</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+    <script src="js/logginn.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body style=" background-image: url(nor-way.jpg); background-repeat: no-repeat;" class="w-100 h-100">
+    <nav class="navbar navbar-expand-md navbar-light bg-transparent">
+        <a href="#" class="navbar-brand">
+            <img src="icon.svg" height="28" alt="CoolBrand">
+        </a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav">
+                <a href="index.html" class="nav-item nav-link">Hjem</a>
+                <a href="#" class="nav-item nav-link">Billetter</a>
+                <a href="#" class="nav-item nav-link">Om oss</a>
+                <a href="#" class="nav-item nav-link active">Innlogging</a>
+            </div>
+            <div class="navbar-nav ml-auto">
+
+            </div>
+    </nav>
+
+    <div class="container bg-light">
+        <h1 class="text-center">Logg inn</h1>
+
+        <form class="form p-5 mx-auto w-50">
+                <div class="row">
+                    <div class="col-md-4">
+                        <label>Brukernavn</label>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="text" id="brukernavn" onchange="validerBrukernavn(this.value)" />
+                    </div>
+                    <span id="feilBrukernavn" style="color: red"></span>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <label>Passord</label>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="password" id="passord" onchange="validerPassord(this.value)" />
+                    </div>
+                    <span id="feilPassord" style="color: red"></span>
+                </div>
+                <input type="button" value="Logg inn" onClick="loggInn()" class="btn btn-primary" />
+            <div id="feil" style="color: red"></div>
+        </form>
+    </div>
+
+
+</body>
+</html>
